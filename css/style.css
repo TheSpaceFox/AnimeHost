@@ -22,6 +22,7 @@ h3{
 }
 
 h4{
+	font-size: 1.5rem;
 	grid-column: 4;
 	align-self: center;
 	text-align: right;
@@ -104,6 +105,7 @@ header{
 .main{
 	display: grid;
 	grid-template-rows: 3;
+	width: 100%;
 }
 
 .slide-container{
@@ -141,7 +143,7 @@ header{
 	display: inline-block;
 	width: 1.2rem;
 	height: 1.2rem;
-	border-radius: 0.6rem;
+	border-radius: 6px;
 	background-color: #fff;
 }
 
@@ -231,30 +233,4 @@ footer > a > img:nth-child(2){
 
 footer > a > img:nth-child(3){
 	grid-column: 3;
-}
-
-/* Optimization */
-
-@media only screen and (min-width: 1280px){
-	html{
-		font-size: 9.5px;
-	}
-
-@media only screen and (min-width: 1600px){
-	html{
-		font-size: 12px;
-	}
-
-@media only screen and (min-width: 1920px){
-	html{
-		font-size: 14.5px;
-	}
-	#recommended-container{
-		height: 35rem;
-	}
-
-@media only screen and (min-width : 320px){
-	html{
-		font-size: 5px;
-	}
 }
