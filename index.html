@@ -4,29 +4,8 @@
 	<title>AnimeHost</title>
 	<meta charset="utf-8">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
-	<link rel="javascript" type="text/javascript" href="js/main.js">
+	<link rel="javascript" type="text/javascript" href="js/script.js">
 	<link href="https://fonts.googleapis.com/css?family=Karla|Montserrat&display=swap" rel="stylesheet">
-	<script type="text/javascript">
-		;(function(window, document, undefined) {
-			'use strict';
-			
-			var	targetLayoutWidth = 1366,
-				baseFontsize      = 10,
-				htmlElement       = document.getElementsByTagName('html')[0],
-				documentElement   = document.documentElement;
-			
-			function updateFontsize() {
-				var currentFontsize = Math.floor(baseFontsize * (documentElement.offsetWidth / targetLayoutWidth));
-					
-				htmlElement.style.fontSize = currentFontsize + 'px';
-			}
-				
-			window.addEventListener('resize', updateFontsize, false);
-			window.addEventListener('orientationchange', updateFontsize, false);
-			
-			updateFontsize();
-		}(window, document));
-	</script>
 </head>
 <body>
 
