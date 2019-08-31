@@ -6,23 +6,45 @@
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link rel="javascript" type="text/javascript" href="js/script.js">
 	<link href="https://fonts.googleapis.com/css?family=Karla|Montserrat&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script>
+	function myFunction() {
+  	var x = document.getElementById("menu");
+  	if (x.style.display === "block") {
+    	x.style.display = "none";
+  	} else {
+   		x.style.display = "block";
+  		}
+	}
+
+	function myFunction2() {
+  	var y = document.getElementById("form");
+  	if (y.style.display === "block") {
+    	y.style.display = "none";
+  	} else {
+   		y.style.display = "block";
+  		}
+	}
+</script>
 </head>
 <body>
 
 	<header>
-		<input id="hamburguer-menu">
-			<img src="imagens\menu-hamburguer.png" style="width: 12vw; height: 12vw" />
-		</input>
-		<a href="#"><img src="imagens\logotipo.png" alt="Logotipo AnimeHost"></a>
+		<a href="javascript:void(0);" class="icon" onclick="myFunction2()">
+    		<i class="fa fa-search"></i>
+  		</a>
+		<a href="#"> <img id="logotipo" src="imagens\logotipo.png" alt="Logotipo AnimeHost" /> </a>
 		<nav>
-			<ul class="menu">	
+			<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    			<i class="fa fa-bars"></i>
+  			</a>
+			<ul id="menu">	
 				<li><a href="#"><b>Home</b></a></li>
 				<li><a href="#">Recentes</a></li>
 				<li><a href="#">Em alta</a></li>
 				<li><a href="#">Calendário</a></li>
 			</ul>
 		</nav>
-
 		<div id="form">
 			<input type="search" name="search" placeholder="  Buscar Animes" />
 			<a href="resutadobuscas.html">
@@ -30,9 +52,10 @@
 			</a>
 		</div>
 
-		<a href="#"><div id="login"><img src="imagens/LaPhoto.png"></div></a>
+		<div id="login"><a href="#"><img src="imagens/LaPhoto.png"></a></div>
 	</header>
 
+	<!--
 	<div class="main">
 		<div class="slide-container">
 			<span id="slider-image-01"></span>
@@ -145,6 +168,7 @@
 
 		<h4> Felipe Ribeiro | Todos direitos reservados, ou não?</h4>
 	</footer>
+-->
 
 </body>
 </html>
