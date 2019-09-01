@@ -158,6 +158,20 @@ footer a > img:nth-child(3) {
 }
 
 @media only screen and (min-device-width: 320px) and (max-device-width: 599px) {
+  h2 {
+    font-size: 4.2vw;
+  }
+  h3 {
+    font-size: 2vw;
+  }
+  h4 {
+    font-size: 2vw;
+  }
+  header {
+    width: 100%;
+    height: 20vw;
+    padding: 0;
+  }
   #logotipo {
     width: 50.0834724541vw;
     height: 12.0367278798vw;
@@ -219,195 +233,78 @@ footer a > img:nth-child(3) {
   }
 }
 
-.slide-container {
-  overflow: hidden;
-  width: 100%;
-  height: 22vw;
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
-}
-
-.image-container {
-  position: relative;
-  width: 400vw;
-  height: 22vw;
-  transition: left 2s;
-  -webkit-transition: left 2s;
-  -moz-transition: left 2s;
-  -o-transition: left 2s;
-}
-
-.slider-image {
-  float: left;
-}
-
-.button-container {
-  top: -1.83vw;
-  position: relative;
-}
-
-.slider-button {
-  display: inline-block;
-  width: 0.87vw;
-  height: 0.87vw;
-  border-radius: 0.44vw;
-  background-color: #fff;
-}
-
-#slider-image-01:target ~ .image-container {
-  left: 0;
-}
-
-#slider-image-02:target ~ .image-container {
-  left: -100vw;
-}
-
-#slider-image-03:target ~ .image-container {
-  left: -200vw;
-}
-
-#slider-image-04:target ~ .image-container {
-  left: -300vw;
-}
-
-/* Playlist */
-.playlist-container {
-  width: 100%;
-  height: 18.3vw;
+.main {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 20% 20% 20% 20% 20%;
-      grid-template-columns: 20% 20% 20% 20% 20%;
-  -ms-grid-rows: 22% auto;
-      grid-template-rows: 22% auto;
+  -ms-grid-rows: 18vw 10vw auto;
+      grid-template-rows: 18vw 10vw auto;
 }
 
-.playlist {
-  -ms-grid-row: 2;
-  grid-row: 2;
-  text-align: center;
-  margin: 0.73vw;
-}
-
-.playlist a {
-  color: #000;
-}
-
-.playlist a > img {
-  width: 17.56vw;
-  height: 9.8vw;
-  border-radius: 1.1vw;
-}
-
-#recommended-container {
-  display: -ms-grid;
-  display: grid;
+#search {
+  -ms-grid-column: 1;
+  grid-column: 1;
   width: 100%;
-  height: 32.94vw;
-  -ms-grid-columns: 20%;
-      grid-template-columns: 20%;
-  -ms-grid-rows: 15% auto;
-      grid-template-rows: 15% auto;
+  height: 18vw;
 }
 
-.recommended {
-  -ms-grid-row: 2;
-  grid-row: 2;
+#search input {
+  margin-top: 5.072vw;
+  margin-left: 4.348vw;
+  border: 0.242vw solid #707070;
+  border-radius: 4.831vw;
+  width: 73.188vw;
+  height: 9.903vw;
+  font-style: 'Karla';
+  font-size: 4.831vw;
 }
 
-.recommended > a > img {
-  border-radius: 1.8vw;
-  margin-left: 20px;
-  width: 16.8374816984vw;
-  height: 25.2562225476vw;
+#lupa {
+  position: absolute;
+  width: 0.73vw;
+  height: 0.73vw;
+  top: 0.51vw;
+  right: 0.51vw;
 }
 
-@media only screen and (min-device-width: 320px) and (max-device-width: 599px) {
-  .main {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-rows: 53vw 40vw 55vw;
-        grid-template-rows: 53vw 40vw 55vw;
-  }
-  h2 {
-    font-size: 4.2vw;
-  }
-  h3 {
-    font-size: 2vw;
-  }
-  h4 {
-    font-size: 2vw;
-  }
-  header {
-    width: 100%;
-    height: 20vw;
-    padding: 0;
-  }
-  /* Main */
-  .slide-container {
-    -ms-grid-row: 1;
-    grid-row: 1;
-    margin-top: 3vw;
-    width: 95%;
-    height: 50vw;
-    border-radius: 5vw;
-    overflow-x: auto;
-    -webkit-overflow-scrolling: touch;
-    -ms-scroll-snap-type: x mandatory;
-        scroll-snap-type: x mandatory;
-  }
-  .image-container {
-    width: 400vw;
-    border-radius: 5vw;
-    height: 50vw;
-    scroll-snap-align: start;
-  }
-  .image-container a > img {
-    scroll-snap-align: start;
-  }
-  .button-container {
-    display: none;
-  }
-  .playlist-container {
-    -ms-grid-row: 2;
-    grid-row: 2;
-    -ms-grid-columns: 42vw 42vw 42vw 42vw;
-        grid-template-columns: 42vw 42vw 42vw 42vw;
-    width: 98%;
-    height: 43vw;
-    margin-left: 1.5vw;
-    overflow-x: auto;
-    -webkit-overflow-scrolling: touch;
-    -ms-scroll-snap-type: x mandatory;
-        scroll-snap-type: x mandatory;
-  }
-  .playlist-container a img {
-    width: 40vw;
-    height: 22.34vw;
-    border-radius: 1.1vw;
-  }
-  #recommended-container {
-    -ms-grid-row: 3;
-    grid-row: 3;
-    width: 98%;
-    height: 50vw;
-    margin-left: 1.5vw;
-    -ms-grid-columns: 32vw;
-        grid-template-columns: 32vw;
-    -ms-grid-rows: 20% auto;
-        grid-template-rows: 20% auto;
-    overflow-x: auto;
-    overflow-y: hidden;
-    -webkit-overflow-scrolling: touch;
-    -ms-scroll-snap-type: x mandatory;
-        scroll-snap-type: x mandatory;
-  }
-  #recommended-container a > img {
-    border-radius: 1.8vw;
-    margin-left: 20px;
-    width: 30vw;
-    height: 45vw;
-  }
+.option-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 10vw;
 }
-/*# sourceMappingURL=style.css.map */
+
+#genero {
+  margin-left: 4.348vw;
+}
+
+#genero, #studio, #nota {
+  width: 31.401vw;
+  height: 8.696vw;
+  margin-right: 3.382vw;
+  border: 0.242vw solid #707070;
+  border-radius: 4.831vw;
+  font-style: 'Karla';
+}
+
+.anime-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100%;
+  height: auto;
+}
+
+.anime-container > a > img {
+  width: 43.720vw;
+  height: 65.459vw;
+  margin: 3vw;
+  border: 0.242vw solid #707070;
+  border-radius: 4.831vw;
+}
+/*# sourceMappingURL=animes.css.map */
