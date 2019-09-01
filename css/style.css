@@ -262,7 +262,10 @@ footer a > img:nth-child(3) {
   grid-column: 3;
 }
 
-@media only screen and (min-device-width: 320px) and (max-device-width: 599px) {
+@media only screen 
+  and (min-device-width: 200px) 
+  and (max-device-width: 736px)  {
+    
   .main {
     display: -ms-grid;
     display: grid;
