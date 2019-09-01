@@ -3,6 +3,13 @@
 $borda: 0.2vw solid #707070;
 $borda2:  4.831vw; 
 
+h5{
+    color: #000;
+    text-align: center;
+    font-size: 3vw;
+    margin: 0;
+}
+
 .main{
     display: grid;
     grid-template-rows: 18vw 10vw auto;
@@ -37,7 +44,6 @@ $borda2:  4.831vw;
 	align-items: center;
     width: 100%;
     height: 10vw; 
-    overflow-x: auto;
 }
 
 #genero{
@@ -50,9 +56,7 @@ $borda2:  4.831vw;
     margin-right:3.382vw;
     border: $borda;
     border-radius: $borda2;
-    background-color: #fff;
     font-style: 'Karla';
-    text-align: center;
 }
 
 .anime-container{
@@ -66,6 +70,7 @@ $borda2:  4.831vw;
     width: 43.720vw;
     height: 65.459vw;
     margin: 3vw;
+    margin-bottom: 1vw;
     border: $borda;
     border-radius: $borda2;
 }
