@@ -241,6 +241,13 @@ h5 {
   margin: 0;
 }
 
+span {
+  color: #707070;
+  text-align: center;
+  display: block;
+  font-size: 2.5vw;
+}
+
 .main {
   display: -ms-grid;
   display: grid;
@@ -253,10 +260,17 @@ h5 {
   grid-column: 1;
   width: 100%;
   height: 18vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 #search input {
-  margin-top: 5.072vw;
   margin-left: 4.348vw;
   border: 0.2vw solid #707070;
   border-radius: 4.831vw;
@@ -276,6 +290,7 @@ h5 {
   -webkit-overflow-scrolling: touch;
   -ms-scroll-snap-type: x mandatory;
       scroll-snap-type: x mandatory;
+  border-bottom: 0.2vw solid #707070;
   width: 100%;
   height: 10vw;
 }
@@ -285,11 +300,11 @@ h5 {
 }
 
 #genero, #studio, #nota {
-  width: 31.401vw;
+  width: 29vw;
   height: 8.696vw;
-  margin-right: 3.382vw;
-  border: 0.2vw solid #707070;
-  border-radius: 4.831vw;
+  margin-right: 3vw;
+  background-color: transparent;
+  border: transparent;
 }
 
 .anime-container {
@@ -298,16 +313,134 @@ h5 {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 100%;
   height: auto;
 }
 
-.anime-container a > img {
-  width: 43.720vw;
-  height: 65.459vw;
-  margin: 3vw;
-  margin-bottom: 1vw;
-  border: 0.2vw solid #707070;
+.anime {
+  background-color: #fff;
+  height: 72vw;
+  width: 40vw;
+  margin-top: 4vw;
   border-radius: 4.831vw;
+}
+
+.anime img {
+  margin-top: 0;
+  margin-bottom: 3vw;
+  width: 40vw;
+  height: 60vw;
+  margin-bottom: 1vw;
+  border-radius: 4.831vw;
+}
+
+.caracteristica {
+  display: none;
+}
+
+.lauroaranha {
+  -ms-grid-columns: 20% 80%;
+      grid-template-columns: 20% 80%;
+  -ms-grid-rows: 10px 10px;
+      grid-template-rows: 10px 10px;
+}
+
+@media only screen and (min-device-width: 600px) and (max-device-width: 1920px) {
+  h5 {
+    font-size: 1vw;
+  }
+  .main {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-rows: 6vw 6vw auto;
+        grid-template-rows: 6vw 6vw auto;
+  }
+  #search {
+    -ms-grid-column: 1;
+    grid-column: 1;
+    width: 70%;
+    height: 6vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-self: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #search input {
+    margin-left: 4.348vw;
+    width: 60vw;
+    height: 3vw;
+    border-radius: 0;
+    border: 0.06vw solid #707070;
+    font-size: 1vw;
+  }
+  .option-container {
+    -ms-grid-column-align: center;
+        justify-self: center;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    border-bottom: 0.06vw solid #707070;
+    width: auto;
+    height: 5vw;
+  }
+  #genero {
+    margin-left: 3vw;
+  }
+  #genero, #studio, #nota {
+    width: 8vw;
+    height: 2.5vw;
+    margin-right: 5vw;
+    background-color: transparent;
+    border: transparent;
+  }
+  .anime-container {
+    -ms-grid-column: 2;
+    grid-column: 2;
+    width: 80%;
+    height: auto;
+  }
+  .anime {
+    background-color: #fff;
+    height: 20vw;
+    width: 10vw;
+    margin-top: 4vw;
+    border-radius: 4.831vw;
+  }
+  .anime img {
+    width: 10vw;
+    height: 15vw;
+    margin: 3vw;
+    margin-bottom: 1vw;
+    border: 0;
+    border-radius: 1vw;
+  }
+  .caracteristica {
+    -ms-grid-column: 1;
+    grid-column: 1;
+    display: block;
+    width: 20%;
+  }
+  .lauroaranha {
+    -ms-grid-row: 3;
+    grid-row: 3;
+    width: 100%;
+    height: auto;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-rows: 20% 80%;
+        grid-template-rows: 20% 80%;
+  }
+  .lauroaranha a > h5 {
+    place-self: center;
+  }
 }
 /*# sourceMappingURL=animes.css.map */

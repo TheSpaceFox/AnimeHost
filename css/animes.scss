@@ -1,7 +1,9 @@
 @import 'template';
 
 $borda: 0.2vw solid #707070;
-$borda2:  4.831vw; 
+$borda2:  4.831vw;
+$borda2-large: 1vw; 
+$borda-large: 0.06vw solid #707070;
 
 
 h5{
@@ -10,7 +12,12 @@ h5{
     font-size: 3vw;
     margin: 0;
 }
-
+span{
+    color: #707070;
+    text-align: center;
+    display: block;
+    font-size: 2.5vw;
+}
 .main{
     display: grid;
     grid-template-rows: 18vw 10vw auto;
@@ -20,8 +27,10 @@ h5{
     grid-column: 1;
 	width: 100%;
     height: 18vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
     input{
-        margin-top: 5.072vw;
         margin-left: 4.348vw;
         border: $borda;
         border-radius: $borda2;
@@ -38,6 +47,7 @@ h5{
     align-items: center;
     -webkit-overflow-scrolling: touch;
     scroll-snap-type: x mandatory;
+    border-bottom: $borda;
     width: 100%;
     height: 10vw; 
 }
@@ -47,25 +57,133 @@ h5{
 }
 
 #genero, #studio, #nota{
-    width: 31.401vw;
+    width: 29vw;
     height: 8.696vw;
-    margin-right:3.382vw;
-    border: $borda;
-    border-radius: $borda2;
+    margin-right:3vw;
+    background-color: transparent;
+    border: transparent;
 }
 
 .anime-container{
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
     width: 100%;
     height: auto;
-    a > img{
-        width: 43.720vw;
-        height: 65.459vw;
-        margin: 3vw;
+}
+
+.anime{
+    background-color: #fff;
+    height: 72vw;
+    width: 40vw;
+    margin-top: 4vw;
+    border-radius: $borda2;
+    img{
+        margin-top: 0;
+        margin-bottom: 3vw;
+        width: 40vw;
+        height: 60vw;
         margin-bottom: 1vw;
-        border: $borda;
         border-radius: $borda2;
+    }
+}
+
+.caracteristica{
+    display: none;
+}
+
+ .lauroaranha{
+        grid-template-columns: 20% 80%;
+        grid-template-rows: 10px 10px;
+    }
+@media only screen 
+  and (min-device-width: 600px) 
+  and (max-device-width: 1920px) {
+    h5{
+        font-size: 1vw;
+    }
+    .main{
+        display: grid;
+        grid-template-rows: 6vw 6vw auto;
+    
+    }
+
+    #search{
+        grid-column: 1;
+        width: 70%;
+        height: 6vw;
+        display: flex;
+        justify-self: center;
+        justify-content: space-around;
+        align-items: center;
+        input{
+            margin-left: 4.348vw;
+            width: 60vw;
+            height: 3vw;
+            border-radius: 0;
+            border: $borda-large;
+            font-size: 1vw;
+        }
+    }
+    .option-container{
+        justify-self: center;
+        align-content: center;
+        border-bottom: $borda-large;
+        width: auto;
+        height: 5vw; 
+    }
+    
+    #genero{
+        margin-left: 3vw;
+    }
+    
+    #genero, #studio, #nota{
+        width: 8vw;
+        height: 2.5vw;
+        margin-right:5vw;
+        background-color: transparent;
+        border: transparent;
+    }
+
+    .anime-container{
+        grid-column: 2;
+        width: 80%;
+        height: auto;
+    }
+
+    .anime{
+        background-color: #fff;
+        height: 20vw;
+        width: 10vw;
+        margin-top: 4vw;
+        border-radius: $borda2;
+        img{
+            width: 10vw;
+            height: 15vw;
+            margin: 3vw;
+            margin-bottom: 1vw;
+            border: 0;
+            border-radius: $borda2-large;
+        }
+    }
+
+    .caracteristica{
+        grid-column: 1;
+        display: block;
+        width: 20%;
+    }
+
+    .lauroaranha{
+        grid-row: 3;
+        width: 100%;
+        height: auto;
+        display: grid;
+        grid-template-rows: 20% 80%;
+
+        a > h5{
+            place-self: center;
+        }
     }
 
 }
