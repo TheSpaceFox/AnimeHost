@@ -32,9 +32,11 @@
         <div id="form">
             <input type="search" name="search" placeholder="  Buscar Animes" />
             <a href="resutadobuscas.html">
-                <i class="fas fa-search"></i>
+
             </a>
         </div>
+
+        <div id="login"><a href="#"><img src="../imagens/LaPhoto.png"></a></div>
     
     </header>
 
@@ -49,7 +51,7 @@
         <div class="option-container">
             <select id="genero">
                 <option value="1" label=" Gênero"> Todos </option>
-                <option value="2"> Artes Marciais </option>
+                <option value="2" onclick="filterSelection('marciax')"> Artes Marciais </option>
                 <option value="3"> Ação </option>
                 <option value="4"> Aventura </option>
                 <option value="5"> Carros </option>
@@ -100,132 +102,114 @@
                 <option value="10"> 10 </option>
             </select>
         </div>
-    <div class="">
-        <div class="caracteristica">
-            <a href="#"><h5> Fausto Silva </h5></a>
-            <a href="#"><h5> Fausto Silva </h5></a>
-            <a href="#"><h5> Fausto Silva </h5></a>
-            <a href="#"><h5> Fausto Silva </h5></a>
-            <a href="#"><h5> Fausto Silva </h5></a>
-            <a href="#"><h5> Fausto Silva </h5></a>
-            <a href="#"><h5> Fausto Silva </h5></a>
-            <a href="#"><h5> Fausto Silva </h5></a>
-            <a href="#"><h5> Fausto Silva </h5></a>
-            <a href="#"><h5> Fausto Silva </h5></a>
-            <a href="#"><h5> Fausto Silva </h5></a>
-            <a href="#"><h5> Fausto Silva </h5></a>
-            <a href="#"><h5> Fausto Silva </h5></a>
-            <a href="#"><h5> Fausto Silva </h5></a>
-            <a href="#"><h5> Fausto Silva </h5></a>
-        </div>
-
+    <div class="lauroaranha">
         <div class="anime-container">
-            <a href="#">
+            <a href="go_toubun_no_hanayome.html">
                 <div class="anime">
                     <img src="../imagens/posters/bokunohero1poster.jpg" />
-                    <h5> Boku no Hero Academia <span> Y Vídeo's</span></h5>
+                    <h5> Boku no Hero Academia <span> 24 Vídeo's</span></h5>
                 </div>
             </a>
             <a href="#">
                 <div class="anime">
                     <img src="../imagens/posters/deathparadeposter.jpg" />
-                    <h5> Death Parade <span> Y Vídeo's</span></h5>
+                    <h5> Death Parade <span> 12 Vídeo's</span></h5>
                 </div>
             </a>
             <a href="#">
                 <div class="anime">
                     <img src="../imagens/posters/gintamaposter.png" />
-                    <h5> Gintama <span> Y Vídeo's</span></h5>
+                    <h5> Gintama <span> 201 Vídeo's</span></h5>
                 </div>
             </a>
             <a href="#">
                 <div class="anime">
                     <img src="../imagens/posters/jojoposter.jpg" />
-                    <h5> Jojo Bizarre Adventure <span> Y Vídeo's</span></h5>
+                    <h5> Jojo Bizarre Adventure <span> 26 Vídeo's</span></h5>
                 </div>
             </a>
             <a href="#">
                 <div class="anime">
                     <img src="../imagens/posters/konosubarashinisekaiposter.jpg" />
-                    <h5> Konosuba <span> Y Vídeo's</span></h5>
+                    <h5> Konosuba <span> 10 Vídeo's</span></h5>
                 </div>
             </a>
             <a href="#">
                 <div class="anime">
                     <img src="../imagens/posters/5toubunnohanayomeposter.jpg" />
-                    <h5> The Quintessential Quintuplets <span> Y Vídeo's</span></h5>
+                    <h5> The Quintessential Quintuplets <span> 12 Vídeo's</span></h5>
                 </div>
             </a>
             <a href="#">
                 <div class="anime">
                     <img src="../imagens/posters/accelworldposter.jpg" />
-                    <h5> Accel World <span> Y Vídeo's</span></h5>
+                    <h5> Accel World <span> 24 Vídeo's</span></h5>
                 </div>
             </a>
             <a href="#">
                 <div class="anime">
                     <img src="../imagens/posters/assasinationclassroomposter.jpg" />
-                    <h5> Assasination Classroom <span> Y Vídeo's</span></h5>
+                    <h5> Assasination Classroom <span> 24 Vídeo's</span></h5>
                 </div>
             </a>
             <a href="#">
                 <div class="anime">
                     <img src="../imagens/posters/assasinationclassroom2poster.jpg" />
-                    <h5> Assasination Classroom Season 2 <span> Y Vídeo's</span></h5>
+                    <h5> Assasination Classroom Season 2 <span> 24 Vídeo's</span></h5>
                 </div>
             </a>
             <a href="#">
                 <div class="anime">
                     <img src="../imagens/posters/bokunohero2poster.jpg" />
-                    <h5> Boku no Hero Academia Season 2 <span> Y Vídeo's</span></h5>
+                    <h5> Boku no Hero Academia Season 2 <span> 24 Vídeo's</span></h5>
                 </div>
             </a>
             <a href="#">
                 <div class="anime">
                     <img src="../imagens/posters/bokunohero3poster.jpg" />
-                    <h5> Boku no Hero Academia Season 3 <span> Y Vídeo's</span></h5>
+                    <h5> Boku no Hero Academia Season 3 <span> 24 Vídeo's</span></h5>
                 </div>
             </a>
             <a href="#">
                 <div class="anime">
                     <img src="../imagens/posters/deathnoteposter.jpg" />
-                    <h5> Death Note <span> Y Vídeo's</span></h5>
+                    <h5> Death Note <span> 37 Vídeo's</span></h5>
                 </div>
             </a>
             <a href="#">
                 <div class="anime">
                     <img src="../imagens/posters/eromangasenseiposter.jpg" />
-                    <h5> Eromanga Sensei <span> Y Vídeo's</span></h5>
+                    <h5> Eromanga Sensei <span> 12 Vídeo's</span></h5>
                 </div>
             </a>
             <a href="#">
                 <div class="anime">
                     <img src="../imagens/posters/fullmetalalchemistbrothehoodposter.jpg" />
-                    <h5> FMA: Brotherhood <span> Y Vídeo's</span></h5>
+                    <h5> FMA: Brotherhood <span> 56 Vídeo's</span></h5>
                 </div>
             </a>
             <a href="#">
                 <div class="anime">
                     <img src="../imagens/posters/gamersposter.jpg" />
-                    <h5> Gamers! <span> Y Vídeo's</span></h5>
+                    <h5> Gamers! <span> 12 Vídeo's</span></h5>
                 </div>
             </a>
             <a href="#">
                 <div class="anime">
                 <img src="../imagens/posters/hunterxhunterposter.jpg" />
-                <h5> Hunter x Hunter <span> Y Vídeo's</span></h5>
+                <h5> Hunter x Hunter <span> 146 Vídeo's</span></h5>
                 </div>
             </a>
             <a href="#">
                 <div class="anime">
                 <img src="../imagens/posters/hunterxhuntermovieposter.jpg" />
-                <h5> Hunter x Hunter Movie <span> Y Vídeo's</span></h5>
+                <h5> Hunter x Hunter Movie <span> 1 Vídeo's</span></h5>
                 </div>
             </a>
             <a href="#">
                 <div class="anime">
                 <img src="../imagens/posters/kaguyasamaposter.jpg" />
-                <h5> Kaguya-Sama <span> Y Vídeo's</span></h5>
+                <h5> Kaguya-Sama <span> 12 Vídeo's</span></h5>
                 </div>
             </a>
         </div>
