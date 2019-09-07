@@ -326,11 +326,6 @@ footer a > img:nth-child(3) {
       justify-content: space-around;
 }
 
-.recommended {
-  -ms-grid-row: 2;
-  grid-row: 2;
-}
-
 .recommended > a > img {
   border-radius: 1.8vw;
   width: 16.8374816984vw;
@@ -338,11 +333,8 @@ footer a > img:nth-child(3) {
 }
 
 @media only screen and (min-device-width: 320px) and (max-device-width: 599px) {
-  .main {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-rows: 53vw 40vw 55vw;
-        grid-template-rows: 53vw 40vw 55vw;
+  footer {
+    margin-top: 0;
   }
   h2 {
     font-size: 4.2vw;
@@ -360,8 +352,6 @@ footer a > img:nth-child(3) {
   }
   /* Main */
   .slide-container {
-    -ms-grid-row: 1;
-    grid-row: 1;
     margin-top: 3vw;
     width: 95%;
     height: 50vw;
@@ -384,13 +374,12 @@ footer a > img:nth-child(3) {
     display: none;
   }
   .playlist-container {
-    -ms-grid-row: 2;
-    grid-row: 2;
-    -ms-grid-columns: 42vw 42vw 42vw 42vw;
-        grid-template-columns: 42vw 42vw 42vw 42vw;
     width: 98%;
-    height: 43vw;
+    height: 30vw;
     margin-left: 1.5vw;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     overflow-x: auto;
     -webkit-overflow-scrolling: touch;
     -ms-scroll-snap-type: x mandatory;
@@ -402,15 +391,12 @@ footer a > img:nth-child(3) {
     border-radius: 1.1vw;
   }
   #recommended-container {
-    -ms-grid-row: 3;
-    grid-row: 3;
     width: 98%;
     height: 50vw;
     margin-left: 1.5vw;
-    -ms-grid-columns: 32vw;
-        grid-template-columns: 32vw;
-    -ms-grid-rows: 20% auto;
-        grid-template-rows: 20% auto;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     overflow-x: auto;
     overflow-y: hidden;
     -webkit-overflow-scrolling: touch;
@@ -419,9 +405,14 @@ footer a > img:nth-child(3) {
   }
   #recommended-container a > img {
     border-radius: 1.8vw;
-    margin-left: 20px;
     width: 30vw;
     height: 45vw;
+  }
+  .playlist {
+    margin-right: 3vw;
+  }
+  .recommended {
+    margin-right: 3vw;
   }
 }
 /*# sourceMappingURL=style.css.map */

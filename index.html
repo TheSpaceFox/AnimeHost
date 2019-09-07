@@ -4,38 +4,20 @@
 	<title>AnimeHost</title>
 	<meta charset="utf-8">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
-	<link rel="javascript" type="text/javascript" href="js/script.js">
+	<script src="js/script.js">
+	</script>
 	<link href="https://fonts.googleapis.com/css?family=Karla|Montserrat&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	<script>
-	function myFunction() {
-  	var x = document.getElementById("menu");
-  	if (x.style.display === "block") {
-    	x.style.display = "none";
-  	} else {
-   		x.style.display = "block";
-  		}
-	}
-
-	function myFunction2() {
-  	var y = document.getElementById("form");
-  	if (y.style.display === "block") {
-    	y.style.display = "none";
-  	} else {
-   		y.style.display = "block";
-  		}
-	}
-</script>
 </head>
 <body>
 
 	<header>
-		<a href="javascript:void(0);" class="icon" onclick="myFunction2()">
+		<a class="icon" href="javascript:myFunction2()">
     		<i class="fa fa-search"></i>
   		</a>
 		<a href="#"> <img id="logotipo" src="imagens\logotipo.png" alt="Logotipo AnimeHost" /> </a>
 		<nav>
-			<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+			<a class="icon" href="javascript:myFunction()">
     			<i class="fa fa-bars"></i>
   			</a>
 			<ul id="menu">	

@@ -254,7 +254,8 @@ footer a > img:nth-child(3) {
   grid-column: 1/2;
   font-size: 8vw;
   color: #fff;
-  width: 50.133vw;
+  width: 55vw;
+  max-width: 65vw;
   margin: 3vw;
 }
 

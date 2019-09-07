@@ -81,10 +81,6 @@
   justify-content: space-around;
 }
 
-.recommended {
-  grid-row: 2;
-}
-
 .recommended > a > img {
   border-radius: 1.8vw;
   width: 16.8374816984vw;
@@ -96,9 +92,8 @@
   and (min-device-width: 320px) 
   and (max-device-width: 599px) {
 
-  .main{
-    display: grid;
-    grid-template-rows: 53vw 40vw 55vw;
+  footer{
+    margin-top: 0;
   }
 
   h2{
@@ -123,7 +118,6 @@
   /* Main */
 
   .slide-container{
-    grid-row: 1;
     margin-top: 3vw;
     width: 95%;
     height: 50vw;
@@ -149,11 +143,10 @@
   }
 
   .playlist-container{
-    grid-row: 2;
-    grid-template-columns: 42vw 42vw 42vw 42vw;
     width: 98%;
-    height: 43vw;
+    height: 30vw;
     margin-left: 1.5vw;
+    justify-content: space-between;
     overflow-x: auto;
     -webkit-overflow-scrolling: touch;
     scroll-snap-type: x mandatory;
@@ -166,22 +159,26 @@
 
 
   #recommended-container {
-    grid-row: 3;
     width: 98%;
     height: 50vw;
     margin-left: 1.5vw;
-    grid-template-columns: 32vw;
-    grid-template-rows: 20% auto;
+    justify-content: space-between;
     overflow-x: auto;
     overflow-y: hidden;
     -webkit-overflow-scrolling: touch;
     scroll-snap-type: x mandatory;
     a > img {
       border-radius: 1.8vw;
-      margin-left: 20px;
       width: 30vw;
       height: 45vw;
     }
   }
 
+  .playlist{
+    margin-right: 3vw;
+  }
+
+  .recommended{
+    margin-right: 3vw;
+  }
 }
