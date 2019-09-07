@@ -230,4 +230,23 @@ footer a > img:nth-child(3) {
     margin: 2vw;
   }
 }
-/*# sourceMappingURL=template.css.map */
+
+.container {
+  width: 100%;
+  height: auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 30% 40% 30%;
+      grid-template-columns: 30% 40% 30%;
+}
+
+#img-holder {
+  -ms-grid-column: 2;
+  grid-column: 2;
+}
+
+#img-holder img {
+  width: 6.250vw;
+  height: 6.25vw;
+}
+/*# sourceMappingURL=underconstruction.css.map */

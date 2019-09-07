@@ -55,16 +55,14 @@
 /* Playlist */
 .playlist-container {
   width: 100%;
-  height: 18.3vw;
-  display: grid;
-  grid-template-columns: 20% 20% 20% 20% 20%;
-  grid-template-rows: 22% auto;
+  height: 14.5vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
 }
 
 .playlist {
-  grid-row: 2;
   text-align: center;
-  margin: 0.73vw;
   a {
     color: #000;
   }
@@ -76,11 +74,11 @@
 }
 
 #recommended-container {
-  display: grid;
   width: 100%;
-  height: 32.94vw;
-  grid-template-columns: 20%;
-  grid-template-rows: 15% auto;
+  height: 26.5vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
 }
 
 .recommended {
@@ -89,7 +87,6 @@
 
 .recommended > a > img {
   border-radius: 1.8vw;
-  margin-left: 20px;
   width: 16.8374816984vw;
   height: 25.2562225476vw;
 }

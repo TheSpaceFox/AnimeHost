@@ -15,11 +15,8 @@ body, ul, li, a {
 }
 
 h2 {
-  -ms-grid-row: 1;
-  grid-row: 1;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 4;
-  grid-column: 1 / 5;
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
   font-size: 1.83vw;
   margin-left: 1.1vw;
 }
@@ -289,20 +286,20 @@ footer a > img:nth-child(3) {
 /* Playlist */
 .playlist-container {
   width: 100%;
-  height: 18.3vw;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 20% 20% 20% 20% 20%;
-      grid-template-columns: 20% 20% 20% 20% 20%;
-  -ms-grid-rows: 22% auto;
-      grid-template-rows: 22% auto;
+  height: 14.5vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
 .playlist {
-  -ms-grid-row: 2;
-  grid-row: 2;
   text-align: center;
-  margin: 0.73vw;
 }
 
 .playlist a {
@@ -316,14 +313,17 @@ footer a > img:nth-child(3) {
 }
 
 #recommended-container {
-  display: -ms-grid;
-  display: grid;
   width: 100%;
-  height: 32.94vw;
-  -ms-grid-columns: 20%;
-      grid-template-columns: 20%;
-  -ms-grid-rows: 15% auto;
-      grid-template-rows: 15% auto;
+  height: 26.5vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
 .recommended {
@@ -333,7 +333,6 @@ footer a > img:nth-child(3) {
 
 .recommended > a > img {
   border-radius: 1.8vw;
-  margin-left: 20px;
   width: 16.8374816984vw;
   height: 25.2562225476vw;
 }

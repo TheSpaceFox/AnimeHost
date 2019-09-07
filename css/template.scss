@@ -14,8 +14,7 @@ body, ul, li, a{
 	font-family: 'Karla';
 }
 h2{
-  grid-row: 1;
-	grid-column: 1 / 5;
+  flex-basis: 100%;
 	font-size: 1.83vw;
 	margin-left: 1.1vw;
 }
