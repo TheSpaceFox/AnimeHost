@@ -254,7 +254,9 @@ footer a > img:nth-child(3) {
   grid-column: 1/2;
   font-size: 8vw;
   color: #fff;
-  width: 55vw;
+  width: auto;
+  min-width: 50vw;
+  height: auto;
   max-width: 65vw;
   margin: 3vw;
 }
@@ -352,5 +354,62 @@ h3 {
   width: 45.867vw;
   height: 25.600vw;
   border-radius: 1.1vw;
+}
+
+@media only screen and (min-device-width: 600px) and (max-device-width: 1920px) {
+  .main {
+    width: 70%;
+  }
+  .main-holder {
+    display: -ms-grid;
+    display: grid;
+  }
+  .anime-holder {
+    width: 42.344vw;
+    height: 23.8vw;
+  }
+  .anime-holder h1 {
+    font-size: 2.083vw;
+    width: auto;
+    min-width: 20vw;
+    height: auto;
+    max-width: 30vw;
+  }
+  p {
+    font-size: 0.94vw;
+  }
+  h2 {
+    font-size: 1.3vw;
+  }
+  h3 {
+    font-size: 1.3vw;
+  }
+  h3 span {
+    font-size: 0.94vw;
+  }
+  .myanimelist {
+    width: 2.396vw;
+    height: 2.396vw;
+    margin: 2vw;
+  }
+  .playlist-holder {
+    width: 100%;
+  }
+  .playlist {
+    margin-top: 3.5vw;
+    width: 70%;
+  }
+  .playlist span {
+    font-size: 2.5vw;
+    display: block;
+  }
+  .playlist a {
+    color: #000;
+  }
+  .playlist a > img {
+    width: 17.56vw;
+    height: 9.8vw;
+    border-radius: 1.1vw;
+  }
 }
 /*# sourceMappingURL=anime.css.map */
