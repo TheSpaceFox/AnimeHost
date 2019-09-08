@@ -20,10 +20,12 @@ $cinza:  #707070;
         grid-column: 1/2;
         font-size: 8vw;
         color: #fff;
-        min-width: 50vw;
-        max-width: 65vw;
-        margin-left: 3vw;
-        margin-bottom: 2.5vw;
+        width: auto;
+        height: auto;
+        min-width: 60vw;
+        max-width: 70vw;
+        margin-left: 4vw;
+        margin-bottom: 3.5vw;
     }
     h4{
         grid-column: 1;
