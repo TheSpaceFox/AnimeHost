@@ -1,3 +1,9 @@
+$cinza-escuro:  #707070;
+%centrao{
+    align-items: center;
+    justify-content: center;
+}
+
 html{
 	scroll-behavior: smooth;
 }
@@ -62,7 +68,7 @@ header{
         margin-left: 1.46vw;
     }
     li a{
-        color: #707070;
+        color: $cinza-escuro;
         display: block;
         padding: 0.73vw;
         font-size: 1.317vw;
@@ -74,7 +80,6 @@ header{
 }
     
 #login{
-	background-color: grey;
 	width: 2.63vw;
 	height: 2.63vw;
 	border-radius: 50%;
@@ -92,7 +97,7 @@ header{
 	width: 16.57vw;
 	height: 1.9vw; 
     input{
-        border: 0.07vw solid #707070;
+        border: 0.07vw solid $cinza-escuro;
         border-radius: 1.46vw; 
         width: 16.57vw;
         height: 1.9vw;
@@ -195,7 +200,7 @@ footer {
     input{
       width: 90%;
       height: 10vw;
-      border: 0.3vw solid #707070;
+      border: 0.3vw;
       border-radius: 1vw; 
       font-size: 3vw;
       margin: 3vw;

@@ -1,3 +1,12 @@
+.playlist-holder {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -86,7 +95,6 @@ header {
 }
 
 #login {
-  background-color: grey;
   width: 2.63vw;
   height: 2.63vw;
   border-radius: 50%;
@@ -209,7 +217,7 @@ footer a > img:nth-child(3) {
   #form input {
     width: 90%;
     height: 10vw;
-    border: 0.3vw solid #707070;
+    border: 0.3vw;
     border-radius: 1vw;
     font-size: 3vw;
     margin: 3vw;
@@ -232,15 +240,6 @@ footer a > img:nth-child(3) {
   }
 }
 
-.playlist-holder {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
 .anime-holder {
   display: -ms-grid;
   display: grid;
@@ -257,6 +256,10 @@ footer a > img:nth-child(3) {
 }
 
 .anime-holder h1 {
+  -ms-flex-item-align: end;
+      -ms-grid-row-align: end;
+      align-self: end;
+  text-shadow: 2px 1.5px #707070;
   -ms-grid-row: 3;
   grid-row: 3;
   -ms-grid-column: 1;
@@ -264,11 +267,9 @@ footer a > img:nth-child(3) {
   grid-column: 1/2;
   font-size: 8vw;
   color: #fff;
-  width: auto;
-  height: auto;
-  min-width: 60vw;
-  max-width: 70vw;
-  margin-left: 4vw;
+  min-width: 50vw;
+  max-width: 65vw;
+  margin-left: 3vw;
   margin-bottom: 3.5vw;
 }
 
@@ -411,7 +412,7 @@ h3 {
     height: auto;
     max-width: 30vw;
     margin-left: 1vw;
-    margin-bottom: 0.5vw;
+    margin-bottom: 1vw;
   }
   .anime-holder h4 {
     font-size: 1vw;

@@ -2,8 +2,7 @@
 
 $cinza:  #707070;
 %centrao{
-    align-items: center;
-    justify-content: center;
+
 }
 
 .anime-holder{
@@ -16,15 +15,15 @@ $cinza:  #707070;
         position: relative;
     }
     h1{
+        align-self: end;
+        text-shadow: 2px 1.5px $cinza;
         grid-row: 3;
         grid-column: 1/2;
         font-size: 8vw;
         color: #fff;
-        width: auto;
-        height: auto;
-        min-width: 60vw;
-        max-width: 70vw;
-        margin-left: 4vw;
+        min-width: 50vw;
+        max-width: 65vw;
+        margin-left: 3vw;
         margin-bottom: 3.5vw;
     }
     h4{
@@ -145,7 +144,7 @@ h3{
         height: auto;
         max-width: 30vw;
         margin-left: 1vw;
-        margin-bottom: 0.5vw;
+        margin-bottom: 1vw;
         }
         h4{
             font-size: 1vw;

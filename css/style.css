@@ -86,7 +86,6 @@ header {
 }
 
 #login {
-  background-color: grey;
   width: 2.63vw;
   height: 2.63vw;
   border-radius: 50%;
@@ -209,7 +208,7 @@ footer a > img:nth-child(3) {
   #form input {
     width: 90%;
     height: 10vw;
-    border: 0.3vw solid #707070;
+    border: 0.3vw;
     border-radius: 1vw;
     font-size: 3vw;
     margin: 3vw;
