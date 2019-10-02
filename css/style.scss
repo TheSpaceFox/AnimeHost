@@ -15,22 +15,22 @@
   transition: left 2s;
   a:nth-child(1){
     .slider-image{
-        background-image: url("../imagens/fireforce.jpg");
+        background-image: url("./imagens/fireforce.jpg");
     }
   }
     a:nth-child(2){
       .slider-image{
-          background-image: url("../imagens/accelerator.jpg");
+          background-image: url("./imagens/accelerator.jpg");
       }
     }
       a:nth-child(3){
         .slider-image{
-            background-image: url("../imagens/vinlandsaga.jpg");
+            background-image: url("./imagens/vinlandsaga.jpg");
         }
       }
         a:nth-child(4){
           .slider-image{
-              background-image: url("../imagens/magicalsenpai.png");
+              background-image: url("./imagens/magicalsenpai.png");
           }
   }
 }
