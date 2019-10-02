@@ -1,11 +1,11 @@
 function myFunction() {
-  	var x = document.getElementById("menu");
-    var y = document.getElementById("form");
+    var x = document.getElementById("menu");
+    var y= document.getElementById("form");
   	if (x.style.display === "block") {
         x.style.display = "none";
     } else {
         x.style.display = "block";
-    y.style.display = "none";
+        y.style.display = "none";
     }
 }
 
@@ -16,6 +16,6 @@ function myFunction2() {
         y.style.display = "none";
     } else {
         y.style.display = "block";
-    x.style.display = "none";
+        x.style.display = "none";
     }
 }

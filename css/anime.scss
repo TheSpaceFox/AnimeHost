@@ -1,9 +1,6 @@
 @import 'template';
 
 $cinza:  #707070;
-%centrao{
-
-}
 
 .anime-holder{
     display: grid;
@@ -48,13 +45,16 @@ p{
     margin-right: 6.2vw;
 }
 
-#fundo{
+picture{
     grid-column: 1/4;
     grid-row: 1/4;
-    width: 100%;
-    height: 100%;
     filter: brightness(0.8);
     opacity: 0.9;
+}
+
+.fundo{
+    width: 100%;
+    height: 100%;
 }
 
 .myanimelist{

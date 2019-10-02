@@ -44,9 +44,13 @@
         <div class="main-holder">
             <div class="anime-holder">
                 <h4> &#9734; 8/10 </h4>
-                <img id="fundo" srcset="../imagens/animes_thumbs/my_hero_academia-large.jpg 813w, 
-                                    ../imagens/animes_thumbs/my_hero_academia.jpg 375w"
-                    src="..animes/imagens/animes_thumbs/my_hero_academia-large.jpg" alt="poster do anime" />
+                <picture>
+                    <source class="fundo" srcset="../imagens/animes_thumbs/bokunohero3-large.jpg 813w" />
+                    <source class="fundo" srcset="../imagens/animes_thumbs/bokunohero3.jpg 375w" />
+                    <source class="fundo" srcset="../animes/animes_thumbswebp/bokunohero3-large.webp 813w" type="image/webp" />
+                    <source class="fundo" srcset="../animes/animes_thumbswebp/bokunohero3.webp 813w" type="image/webp" />
+                    <img class="fundo" src="/imagens/animes_thumbswebp/bokunohero3.jpg" />
+                </picture>         
                 <h1> Boku no Hero Academia </h1>
                 <img class="myanimelist" src="../imagens/myanimelist.png" alt="My Anime List Logo" />
             </div>

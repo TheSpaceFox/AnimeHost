@@ -4,6 +4,7 @@ html {
 
 body {
   background-color: #f5f5f5;
+  text-rendering: optimizeLegibility;
 }
 
 body, ul, li, a {
@@ -17,7 +18,7 @@ body, ul, li, a {
 h2 {
   -ms-flex-preferred-size: 100%;
       flex-basis: 100%;
-  font-size: 1.83vw;
+  font-size: 1.5vw;
   margin-left: 1.1vw;
 }
 
@@ -39,14 +40,12 @@ h4 {
 
 header {
   background-color: #fff;
-  width: 97%;
-  height: 5.12vw;
+  width: auto;
+  height: 4vw;
   padding: 1.46vw;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
   -ms-flex-pack: distribute;
       justify-content: space-around;
   -webkit-box-align: center;
@@ -59,8 +58,8 @@ header {
 }
 
 #logotipo {
-  width: 18.887262079062957vw;
-  height: 4.538799414348463vw;
+  width: 15vw;
+  height: 3.6vw;
 }
 
 #menu {
@@ -85,6 +84,10 @@ header {
   border-radius: 0.1vw;
 }
 
+#menu-collapse {
+  display: none;
+}
+
 #login {
   width: 2.63vw;
   height: 2.63vw;
@@ -100,25 +103,20 @@ header {
 
 #form {
   position: relative;
-  width: 16.57vw;
-  height: 1.9vw;
 }
 
 #form input {
+  padding: 1vw;
   border: 0.07vw solid #707070;
   border-radius: 1.46vw;
   width: 16.57vw;
-  height: 1.9vw;
-  font-style: 'Karla';
+  height: 0.6vw;
   font-size: 0.9vw;
 }
 
 #lupa {
-  position: absolute;
   width: 0.73vw;
   height: 0.73vw;
-  top: 0.51vw;
-  right: 0.51vw;
 }
 
 /* Footer */
@@ -175,19 +173,42 @@ footer a > img:nth-child(3) {
   }
   #menu {
     display: none;
-    position: absolute;
-    z-index: 1;
+  }
+  /* 
+  #menu-collapse{
+    display: none;
+    position: relative;
+    width: 100%;
+    flex-direction: column;
+    right: 0;
+    height: 28vw;
+    background-color: #fff;
+    li > a{
+      font-size: 4vw;
+    }
+  }
+  */
+  #menu-collapse {
+    display: none;
+  }
+  #menu-collapse nav {
+    overflow: hidden;
+  }
+  #menu-collapse nav ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    right: 0;
-    top: 20vw;
-    width: 100%;
-    height: 28vw;
-    background-color: #fff;
+    text-align: center;
   }
-  #menu li > a {
+  #menu-collapse nav ul li {
+    display: block;
+    padding: 10px;
+  }
+  #menu-collapse nav a {
     font-size: 4vw;
   }
   .icon {

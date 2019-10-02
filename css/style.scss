@@ -1,11 +1,10 @@
 @import 'template';
 
+
 .slide-container{
   overflow: hidden;
   width: 100%;
   height: 22vw;
-  margin-left: auto;
-  margin-right: auto;
   text-align: center;
 }
 
@@ -14,18 +13,61 @@
   width: 400vw;
   height: 22vw;
   transition: left 2s;
-  -webkit-transition: left 2s;
-  -moz-transition: left 2s;
-  -o-transition: left 2s;
+  a:nth-child(1){
+    .slider-image{
+        background-image: url("../imagens/fireforce.jpg");
+    }
+  }
+    a:nth-child(2){
+      .slider-image{
+          background-image: url("../imagens/accelerator.jpg");
+      }
+    }
+      a:nth-child(3){
+        .slider-image{
+            background-image: url("../imagens/vinlandsaga.jpg");
+        }
+      }
+        a:nth-child(4){
+          .slider-image{
+              background-image: url("../imagens/magicalsenpai.png");
+          }
+  }
 }
+
 
 .slider-image {
   float: left;
+  display: flex;
+  width: 100vw;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  span{
+    align-self: flex-end;
+    margin: 1vw; 
+  }
+  h1,h3{
+    align-self: flex-end;
+    margin: 0.2vw;
+    color: #000;
+  }
+  h1{
+    font-size: 3.490vw;
+  }
+  h3{
+    float: right;
+    font-size: 1.823vw;
+  }
 }
 
+
 .button-container {
-  top: -1.83vw;
   position: relative;
+  top: -1.83vw;
 }
 
 .slider-button {
@@ -34,6 +76,10 @@
   height: 0.87vw;
   border-radius: 0.44vw;
   background-color: #fff;
+  opacity: 1;
+}
+.slider-button:hover{
+  background-color: $cinza-escuro;
 }
 
 #slider-image-01:target ~ .image-container {
@@ -54,43 +100,54 @@
 
 /* Playlist */
 .playlist-container {
-  width: 100%;
-  height: 14.5vw;
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  width: auto;
+  height: 11.5vw;
+  overflow: hidden;
 }
 
 .playlist {
   text-align: center;
+  margin-left: 2vw;
   a {
     color: #000;
   }
   a > img {
-    width: 17.56vw;
-    height: 9.8vw;
-    border-radius: 1.1vw;
+    width: 15vw;
+    height: 8.43vw;
+    border-radius: 0.8vw;
   }
 }
 
 #recommended-container {
-  width: 100%;
-  height: 26.5vw;
+  width: auto;
+  height: 19.5vw;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  overflow-x: hidden;
+  overflow-y: hidden;
 }
 
 .recommended > a > img {
-  border-radius: 1.8vw;
-  width: 16.8374816984vw;
-  height: 25.2562225476vw;
+  width: 13.8vw;
+  height: 19.4vw;
+  margin-left: 2vw;
+  border-radius: 0.8vw;
 }
 
 
 @media only screen 
   and (min-device-width: 320px) 
   and (max-device-width: 599px) {
+
+  %scrollweb{
+  overflow-x: auto;
+  overflow-y: hidden;
+  -webkit-overflow-scrolling: touch;
+  scroll-snap-type: x mandatory;
+  }
 
   footer{
     margin-top: 0;
@@ -112,32 +169,38 @@
   header {
     width: 100%;
     height: 20vw;
-    padding: 0;
   }
 
   /* Main */
 
   .slide-container{
-    margin-top: 3vw;
     width: 95%;
+    margin: 0 auto;
     height: 50vw;
+    margin-top: 3vw;
     border-radius: 5vw;
-    overflow-x: auto;
-    -webkit-overflow-scrolling: touch;
-    scroll-snap-type: x mandatory; 
+    @extend %scrollweb;
   }
 
   .image-container{
     width: 400vw;
-    border-radius: 5vw;
     height: 50vw;
-    scroll-snap-align: start;
+    border-radius: 5vw;
   }
 
-  .image-container a > img{
-    scroll-snap-align: start;
+  .slider-image{
+    h1{
+    font-size: 7vw;
+    }
+    h3{
+    float: right;
+    font-size: 4vw;
+    }
   }
 
+  .info{
+    max-width: 70%;
+  }
   .button-container{
     display: none;
   }
@@ -147,9 +210,7 @@
     height: 30vw;
     margin-left: 1.5vw;
     justify-content: space-between;
-    overflow-x: auto;
-    -webkit-overflow-scrolling: touch;
-    scroll-snap-type: x mandatory;
+    @extend %scrollweb;
     a img {
       width: 40vw;
       height: 22.34vw;
@@ -168,9 +229,10 @@
     -webkit-overflow-scrolling: touch;
     scroll-snap-type: x mandatory;
     a > img {
-      border-radius: 1.8vw;
       width: 30vw;
       height: 45vw;
+      margin: 2vw;
+      border-radius: 1.8vw;
     }
   }
 

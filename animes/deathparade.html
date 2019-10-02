@@ -43,10 +43,13 @@
         <div class="main-holder">
         <div class="anime-holder">
             <h4> &#9734; 9/10 </h4>
-            <img id="fundo" srcset="../imagens/animes_thumbs/death_parade-large.jpg 813w, 
-                                    ../imagens/animes_thumbs/death_parade.jpg 375w"
-                            src="..animes/imagens/animes_thumbs/death_parade-large.jpg" 
-                            alt="poster do anime" />
+            <picture>
+                <source class="fundo" srcset="../imagens/animes_thumbs/death_parade-large.jpg 813w" alt="Death Parade"/>
+                <source class="fundo" srcset="../imagens/animes_thumbs/death_parade.jpg 375w" alt="Death Parade" />
+                <source class="fundo" srcset="../animes/animes_thumbswebp/death_parade-large.webp 813w" type="image/webp" alt="Death Parade" />
+                <source class="fundo" srcset="../animes/animes_thumbswebp/death_parade.webp 813w" type="image/webp" alt="Death Parade" />
+                <img class="fundo" src="/imagens/animes_thumbswebp/death_parade.jpg" alt="Death Parade" />
+            </picture> 
             <h1> Death Parade </h1>
             <img class="myanimelist" src="../imagens/myanimelist.png" alt="My Anime List Logo" />
         </div>

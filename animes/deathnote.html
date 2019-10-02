@@ -43,10 +43,13 @@
         <div class="main-holder">
         <div class="anime-holder">
             <h4> &#9734; 10/10 </h4>
-            <img id="fundo" srcset="../imagens/animes_thumbs/death-note-large.jpg 813w, 
-                                    ../imagens/animes_thumbs/death-note.jpg 375w"
-                            src="..animes/imagens/animes_thumbs/death-note-large.jpg" 
-                            alt="poster do anime" />
+            <picture>
+                <source class="fundo" srcset="../imagens/animes_thumbs/death-note-large.jpg 813w" alt="Death Note"/>
+                <source class="fundo" srcset="../imagens/animes_thumbs/death-note.jpg 375w" alt="Death Note" />
+                <source class="fundo" srcset="../animes/animes_thumbswebp/death-note-large.webp 813w" type="image/webp" alt="Death Note" />
+                <source class="fundo" srcset="../animes/animes_thumbswebp/death-note.webp 813w" type="image/webp" alt="Death Note" />
+                <img class="fundo" src="/imagens/animes_thumbswebp/death-note.jpg" alt="Death Note" />
+            </picture>         
             <h1> Death Note </h1>
             <img class="myanimelist" src="../imagens/myanimelist.png" alt="My Anime List Logo" />
         </div>
