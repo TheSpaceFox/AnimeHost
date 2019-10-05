@@ -43,10 +43,11 @@
         <div class="main-holder">
         <div class="anime-holder">
             <h2> &#9734; 8/10 </h2>
-                        <img id="fundo" srcset="../imagens/animes_thumbs/go_toubun_no_hanayome-large.jpg 813w, 
-                                                ../imagens/animes_thumbs/go_toubun_no_hanayome.jpg 375w"
-                                        src="..animes/imagens/animes_thumbs/go_toubun_no_hanayome-large.jpg" 
-                                        alt="poster do anime" />
+            <picture>
+                <source class="fundo" media="(min-width: 600px)" srcset="..\imagens\animes_thumbs\go_toubun_no_hanayome-large.jpg" />
+                <source class="fundo" srcset="../imagens/animes_thumbs/go_toubun_no_hanayome.jpg" />
+                <img class="fundo" src="/imagens/animes_thumbswebp/go_toubun_no_hanayome.jpg" alt="Go Toubun no Hanayome" />
+            </picture>
             <h1> 5-Toubun no Hanayome </h1>
             <img class="myanimelist" src="../imagens/myanimelist.png" alt="My Anime List Logo" />
         </div>

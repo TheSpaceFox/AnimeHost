@@ -43,10 +43,11 @@
         <div class="main-holder">
         <div class="anime-holder">
             <h4> &#9734; 9/10 </h4>
-            <img id="fundo" srcset="../imagens/animes_thumbs/konosuba-large.jpg 813w, 
-                                    ../imagens/animes_thumbs/konosuba.jpg 375w"
-                            src="..animes/imagens/animes_thumbs/konosuba-large.jpg" 
-                            alt="poster do anime" />
+            <picture>
+                <source class="fundo" media="(min-width: 600px)" srcset="..\imagens\animes_thumbs\konosuba-large.jpg" />
+                <source class="fundo" srcset="../imagens/animes_thumbs/konosuba.jpg" />
+                <img class="fundo" src="/imagens/animes_thumbswebp/konosuba-large.jpg" alt="Konosuba" />
+            </picture>
             <h1> Konosuba </h1>
             <img class="myanimelist" src="../imagens/myanimelist.png" alt="My Anime List Logo" />
         </div>
