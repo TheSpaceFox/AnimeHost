@@ -427,6 +427,13 @@ footer {
     height: 50vw;
     border-radius: 5vw;
   }
+<<<<<<< HEAD
+=======
+  .slider-image h1, .slider-image h3 {
+    color: #fff;
+    text-shadow: 1px 0.5px #707070;
+  }
+>>>>>>> 65429d405d19f59f6e422bfa42c53b11a5e8fe8b
   .slider-image h1 {
     font-size: 7vw;
   }
