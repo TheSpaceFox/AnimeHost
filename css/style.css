@@ -392,7 +392,7 @@ footer {
 
 @media only screen and (min-device-width: 320px) and (max-device-width: 599px) {
   .slide-container, .playlist-container {
-    overflow-x: auto;
+    overflow-x: scroll;
     overflow-y: hidden;
     -webkit-overflow-scrolling: touch;
     -ms-scroll-snap-type: x mandatory;
