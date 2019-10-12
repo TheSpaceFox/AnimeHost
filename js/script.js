@@ -1,4 +1,4 @@
-function myFunction() {
+function menu_collapse() {
     var x = document.getElementById("menu");
     var y= document.getElementById("form");
   	if (x.style.display === "block") {
@@ -9,7 +9,7 @@ function myFunction() {
     }
 }
 
-function myFunction2() {
+function searchbar_collapse() {
   	var y = document.getElementById("form");
     var x = document.getElementById("menu");
   	if (y.style.display === "block") {

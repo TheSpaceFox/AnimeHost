@@ -1,8 +1,4 @@
 $cinza-escuro:  #707070;
-%centrao{
-  align-items: center;
-  justify-content: center;
-}
 %search-transparent{
   background-color: transparent;
   border: transparent;
@@ -25,15 +21,18 @@ body{
 
 body, ul, li, a{
 	margin: 0;
-    padding: 0;
-    text-decoration: none;
+  padding: 0;
+  text-decoration: none;
 	list-style: none;
 	font-family: 'Karla';
 }
+
+h1{
+  font-size: 3.5vw;
+}
+
 h2{
-  flex-basis: 100%;
 	font-size: 1.5vw;
-	margin-left: 1.1vw;
 }
 
 h3{
@@ -41,13 +40,8 @@ h3{
 }
 
 h4{
-	grid-column: 4;
-	align-self: center;
-	text-align: right;
-	margin-right: 0.6vw;
 	font-size: 1.1vw;
 }
-
 
 header{
 	background-color: #fff;
@@ -57,7 +51,6 @@ header{
   @extend %header-footer;
 }
 
-
 .icon{
   display: none;
 }
@@ -65,32 +58,25 @@ header{
 #logotipo{
 	width: 15vw;
 	height: 3.6vw;
-	
 }
 
 #menu{
-    display: flex;
+    display: flex;  
     li{
-        
-        margin-left: 1.46vw;
+      margin-left: 1.46vw;
     }
     li a{
-        color: $cinza-escuro;
-        display: block;
-        padding: 0.73vw;
-        font-size: 1.317vw;
+      color: $cinza-escuro;
+      display: block;
+      padding: 0.73vw;
+      font-size: 1.317vw;
     }
     li a:hover{
-        background-color: #d9d9d9;
-        border-radius: 0.1vw;
+      background-color: #d9d9d9;
+      border-radius: 0.1vw;
     }
 }
-
-#menu-collapse{
-  display: none;
-
-}
-    
+  
 #login{
 	width: 2.63vw;
 	height: 2.63vw;
@@ -106,9 +92,7 @@ header{
 
 #form{
   position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+  @extend %header-footer;
   width: 16.57vw;
   height: 0.8vw;
   border: 0.07vw solid $cinza-escuro;
@@ -120,8 +104,8 @@ header{
     @extend %search-transparent;
     }
   button{
-    @extend %search-transparent;
     img{width: 0.8vw; height: 0.8vw;}
+    @extend %search-transparent;
   }
 }
 
@@ -131,7 +115,6 @@ footer {
   width: 100%;
   height: 5.12vw;
   margin-top: 1.5vw;
-  display: flex;
   @extend %header-footer;
   background-color: #fff;
 }
@@ -168,8 +151,8 @@ footer {
     padding: 0;
   }
   #logotipo{
-    width: 50.0834724541vw;
-    height: 12.0367278798vw;
+    width: 50vw;
+    height: 12vw;
   }
 
   #menu {
@@ -177,7 +160,6 @@ footer {
     position: absolute ;
     z-index: 1;
     flex-direction: column;
-    right: 0;
     top: 20vw;
     width: 100%;
     height: 28vw;
@@ -201,17 +183,15 @@ footer {
     width: 100%;
     height: 15vw;
     background-color: #fff;
-    right: 0;
     input{
       width: 90%;
       height: 10vw;
-      border: 0.3vw;
+      border: 0.3vw solid $cinza-escuro;
       border-radius: 1vw; 
       font-size: 3vw;
       margin: 3vw;
     }
   }
-
 
   #login {
     display: none;
@@ -223,11 +203,9 @@ footer {
     width: 100%;
     height: 12vw;
     margin-top: 4vw;
-    grid-template-columns: 10% 10% 10% 70%;
     a > img {
       width: 6vw;
       height: 6vw;
-      margin: 2vw;
     }
   }
 }

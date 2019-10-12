@@ -1,5 +1,13 @@
 @import 'template';
 
+h2{
+  margin-left: 1.2vw;
+}
+
+h4{
+	align-self: center;
+	margin-right: 0.6vw;
+}
 
 .slide-container{
   overflow: hidden;
@@ -54,9 +62,6 @@
     align-self: flex-end;
     margin: 0.2vw;
     color: #000;
-  }
-  h1{
-    font-size: 3.490vw;
   }
   h3{
     float: right;
@@ -143,8 +148,7 @@
   and (max-device-width: 599px) {
 
   %scrollweb{
-  overflow-x: auto;
-  overflow-y: hidden;
+  overflow: scroll;
   -webkit-overflow-scrolling: touch;
   scroll-snap-type: x mandatory;
   }
@@ -189,6 +193,7 @@
   }
 
   .slider-image{
+    scroll-snap-align: start;
     h1{
     font-size: 7vw;
     }
@@ -237,10 +242,12 @@
   }
 
   .playlist{
+    scroll-snap-align: start;
     margin-right: 3vw;
   }
 
   .recommended{
+    scroll-snap-align: start;
     margin-right: 3vw;
   }
 }

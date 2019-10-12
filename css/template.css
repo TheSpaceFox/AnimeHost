@@ -4,7 +4,7 @@
   outline: none;
 }
 
-header, footer {
+header, #form, footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -32,11 +32,12 @@ body, ul, li, a {
   font-family: 'Karla';
 }
 
+h1 {
+  font-size: 3.5vw;
+}
+
 h2 {
-  -ms-flex-preferred-size: 100%;
-      flex-basis: 100%;
   font-size: 1.5vw;
-  margin-left: 1.1vw;
 }
 
 h3 {
@@ -44,13 +45,6 @@ h3 {
 }
 
 h4 {
-  -ms-grid-column: 4;
-  grid-column: 4;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
-  text-align: right;
-  margin-right: 0.6vw;
   font-size: 1.1vw;
 }
 
@@ -92,10 +86,6 @@ header {
   border-radius: 0.1vw;
 }
 
-#menu-collapse {
-  display: none;
-}
-
 #login {
   width: 2.63vw;
   height: 2.63vw;
@@ -111,15 +101,6 @@ header {
 
 #form {
   position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   width: 16.57vw;
   height: 0.8vw;
   border: 0.07vw solid #707070;
@@ -142,9 +123,6 @@ footer {
   width: 100%;
   height: 5.12vw;
   margin-top: 1.5vw;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   background-color: #fff;
 }
 
@@ -176,8 +154,8 @@ footer {
     padding: 0;
   }
   #logotipo {
-    width: 50.0834724541vw;
-    height: 12.0367278798vw;
+    width: 50vw;
+    height: 12vw;
   }
   #menu {
     display: none;
@@ -187,7 +165,6 @@ footer {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    right: 0;
     top: 20vw;
     width: 100%;
     height: 28vw;
@@ -209,12 +186,11 @@ footer {
     width: 100%;
     height: 15vw;
     background-color: #fff;
-    right: 0;
   }
   #form input {
     width: 90%;
     height: 10vw;
-    border: 0.3vw;
+    border: 0.3vw solid #707070;
     border-radius: 1vw;
     font-size: 3vw;
     margin: 3vw;
@@ -227,13 +203,10 @@ footer {
     width: 100%;
     height: 12vw;
     margin-top: 4vw;
-    -ms-grid-columns: 10% 10% 10% 70%;
-        grid-template-columns: 10% 10% 10% 70%;
   }
   footer a > img {
     width: 6vw;
     height: 6vw;
-    margin: 2vw;
   }
 }
 /*# sourceMappingURL=template.css.map */
