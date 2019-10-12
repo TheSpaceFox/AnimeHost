@@ -9,6 +9,7 @@ h4{
 	margin-right: 0.6vw;
 }
 
+
 .slide-container{
   overflow: hidden;
   width: 100%;
@@ -24,23 +25,23 @@ h4{
   a:nth-child(1){
     .slider-image{
         background-image: url("../imagens/fireforce.jpg");
-    }
+      }
   }
-    a:nth-child(2){
+  a:nth-child(2){
       .slider-image{
-          background-image: url("../imagens/accelerator.jpg");
+        background-image: url("../imagens/accelerator.jpg");
       }
     }
       a:nth-child(3){
         .slider-image{
             background-image: url("../imagens/vinlandsaga.jpg");
+          }
         }
-      }
         a:nth-child(4){
           .slider-image{
-              background-image: url("../imagens/magicalsenpai.png");
+            background-image: url("../imagens/magicalsenpai.png");
           }
-  }
+        }
 }
 
 
@@ -144,35 +145,20 @@ h4{
 
 
 @media only screen 
-  and (min-device-width: 320px) 
+and (min-device-width: 320px) 
   and (max-device-width: 599px) {
+    
+  .main{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
 
   %scrollweb{
-  overflow: scroll;
-  -webkit-overflow-scrolling: touch;
-  scroll-snap-type: x mandatory;
-  }
-
-  footer{
-    margin-top: 0;
-  }
-
-  h2{
-    font-size: 4.2vw;
-  }
-
-  h3{
-    font-size: 2vw;
-  }
-
-  h4{
-    font-size: 2vw;
-  }
-
-
-  header {
-    width: 100%;
-    height: 20vw;
+    overflow: scroll;
+    -webkit-overflow-scrolling: touch;
+    scroll-snap-type: x mandatory;
   }
 
   /* Main */

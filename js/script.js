@@ -1,5 +1,5 @@
 function menu_collapse() {
-    var x = document.getElementById("menu");
+    var x = document.getElementById("menu_collapse");
     var y= document.getElementById("form");
   	if (x.style.display === "block") {
         x.style.display = "none";

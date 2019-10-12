@@ -4,7 +4,7 @@
   outline: none;
 }
 
-header, footer {
+.fixed, #form, footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -32,11 +32,12 @@ body, ul, li, a {
   font-family: 'Karla';
 }
 
+h1 {
+  font-size: 3.5vw;
+}
+
 h2 {
-  -ms-flex-preferred-size: 100%;
-      flex-basis: 100%;
   font-size: 1.5vw;
-  margin-left: 1.1vw;
 }
 
 h3 {
@@ -44,21 +45,29 @@ h3 {
 }
 
 h4 {
-  -ms-grid-column: 4;
-  grid-column: 4;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
-  text-align: right;
-  margin-right: 0.6vw;
   font-size: 1.1vw;
 }
 
 header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  height: auto;
+}
+
+.fixed {
   background-color: #fff;
   width: auto;
   height: 4vw;
   padding: 1.46vw;
+}
+
+#menu_collapse {
+  display: none;
 }
 
 .icon {
@@ -92,10 +101,6 @@ header {
   border-radius: 0.1vw;
 }
 
-#menu-collapse {
-  display: none;
-}
-
 #login {
   width: 2.63vw;
   height: 2.63vw;
@@ -111,15 +116,6 @@ header {
 
 #form {
   position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   width: 16.57vw;
   height: 0.8vw;
   border: 0.07vw solid #707070;
@@ -142,9 +138,6 @@ footer {
   width: 100%;
   height: 5.12vw;
   margin-top: 1.5vw;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   background-color: #fff;
 }
 
@@ -170,30 +163,56 @@ footer {
   h4 {
     font-size: 2.5vw;
   }
+  footer {
+    margin-top: 0;
+  }
   header {
+    min-height: 20vw;
+    max-height: 48vw;
     width: 100%;
-    height: 20vw;
-    padding: 0;
-  }
-  #logotipo {
-    width: 50.0834724541vw;
-    height: 12.0367278798vw;
-  }
-  #menu {
-    display: none;
-    position: absolute;
-    z-index: 1;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    right: 0;
-    top: 20vw;
+  }
+  .fixed {
+    height: 17vw;
+  }
+  #logotipo {
+    width: 50vw;
+    height: 12vw;
+  }
+  nav {
+    display: none;
+  }
+  #menu_collapse {
+    display: none;
+    position: absolute;
+    padding: 1vw;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     width: 100%;
-    height: 28vw;
+    height: 20vw;
+    -webkit-transition: display 1s;
+    transition: display 1s;
+  }
+  .menu {
+    width: 100%;
     background-color: #fff;
   }
-  #menu li > a {
+  .menu li {
+    margin-left: 1.3vw;
+  }
+  .menu li a {
+    padding: 0.7vw;
+    color: #707070;
     font-size: 4vw;
   }
   .icon {
@@ -209,12 +228,11 @@ footer {
     width: 100%;
     height: 15vw;
     background-color: #fff;
-    right: 0;
   }
   #form input {
     width: 90%;
     height: 10vw;
-    border: 0.3vw;
+    border: 0.3vw solid #707070;
     border-radius: 1vw;
     font-size: 3vw;
     margin: 3vw;
@@ -227,13 +245,10 @@ footer {
     width: 100%;
     height: 12vw;
     margin-top: 4vw;
-    -ms-grid-columns: 10% 10% 10% 70%;
-        grid-template-columns: 10% 10% 10% 70%;
   }
   footer a > img {
     width: 6vw;
     height: 6vw;
-    margin: 2vw;
   }
 }
 

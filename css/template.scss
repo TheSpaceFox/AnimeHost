@@ -44,11 +44,21 @@ h4{
 }
 
 header{
+  display: flex;
+  flex-direction: row;
+  height: auto;
+}
+
+.fixed{
 	background-color: #fff;
 	width: auto;
   height: 4vw;
 	padding: 1.46vw;
   @extend %header-footer;
+}
+
+#menu_collapse{
+  display: none;
 }
 
 .icon{
@@ -145,27 +155,49 @@ footer {
     font-size: 2.5vw;
   }
 
-  header {
+  footer{
+    margin-top: 0;
+  }
+
+  header{
+    min-height: 20vw;
+    max-height: 48vw;
     width: 100%;
-    height: 20vw;
-    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+
+  .fixed{
+    height: 17vw;
   }
   #logotipo{
     width: 50vw;
     height: 12vw;
   }
 
-  #menu {
+  nav{
     display: none;
-    position: absolute ;
-    z-index: 1;
+  }
+
+  #menu_collapse{
+    display: none;
     flex-direction: column;
-    top: 20vw;
     width: 100%;
-    height: 28vw;
+    height: 20vw;
+    transition: all 1s;
+  }
+
+  .menu {
+    width: 100%;
     background-color: #fff;
-    li > a{
-      font-size: 4vw;
+    li{
+      margin-left: 1.3vw;
+      a{
+       padding: 0.7vw;
+       color: $cinza-escuro;
+       font-size: 4vw;
+     }
     }
   }
 
