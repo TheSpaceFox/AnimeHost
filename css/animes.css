@@ -61,7 +61,7 @@ header {
 
 .fixed {
   background-color: #fff;
-  width: auto;
+  width: 98%;
   height: 4vw;
   padding: 1.46vw;
 }
@@ -181,6 +181,7 @@ footer {
             flex-direction: column;
   }
   .fixed {
+    width: auto;
     height: 17vw;
   }
   #logotipo {
