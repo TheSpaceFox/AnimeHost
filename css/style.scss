@@ -180,6 +180,10 @@ and (min-device-width: 320px)
 
   .slider-image{
     scroll-snap-align: start;
+    h1,h3{
+      color: #fff;
+      text-shadow: 2px 1.5px $cinza-escuro;
+    }
     h1{
     font-size: 7vw;
     }
@@ -230,6 +234,9 @@ and (min-device-width: 320px)
   .playlist{
     scroll-snap-align: start;
     margin-right: 3vw;
+    a > h3{
+      font-size: 3vw;
+    }
   }
 
   .recommended{
