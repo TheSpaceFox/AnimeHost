@@ -79,24 +79,24 @@ header {
   height: 3.6vw;
 }
 
-#menu {
+.menu {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-#menu li {
+.menu li {
   margin-left: 1.46vw;
 }
 
-#menu li a {
+.menu li a {
   color: #707070;
   display: block;
   padding: 0.73vw;
   font-size: 1.317vw;
 }
 
-#menu li a:hover {
+.menu li a:hover {
   background-color: #d9d9d9;
   border-radius: 0.1vw;
 }

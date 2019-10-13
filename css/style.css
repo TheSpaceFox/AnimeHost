@@ -278,19 +278,19 @@ h4 {
 }
 
 .image-container a:nth-child(1) .slider-image {
-  background-image: url("../imagens/fireforce.jpg");
+  background-image: url("../imagens/boku_no_hero_quarta_temporada.jpg");
 }
 
 .image-container a:nth-child(2) .slider-image {
-  background-image: url("../imagens/accelerator.jpg");
+  background-image: url("../imagens/swordaronline_alicization_war_of_underworld.jpg");
 }
 
 .image-container a:nth-child(3) .slider-image {
-  background-image: url("../imagens/vinlandsaga.jpg");
+  background-image: url("../imagens/nanatsu_no_taizai_terceira_temporada.jpg");
 }
 
 .image-container a:nth-child(4) .slider-image {
-  background-image: url("../imagens/magicalsenpai.png");
+  background-image: url("../imagens/shougeki_no_souma_terceira_temporada.jpg");
 }
 
 .slider-image {
@@ -327,7 +327,7 @@ h4 {
 
 .button-container {
   position: relative;
-  top: -1.83vw;
+  top: -30px;
 }
 
 .slider-button {
@@ -364,18 +364,21 @@ h4 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  width: auto;
+  height: 12vw;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  width: auto;
-  height: 11.5vw;
   overflow: hidden;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .playlist {
+  padding: 6px;
   text-align: center;
-  margin-left: 2vw;
 }
 
 .playlist a {
@@ -389,25 +392,28 @@ h4 {
 }
 
 #recommended-container {
-  width: auto;
-  height: 19.5vw;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  width: auto;
+  height: 20vw;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  overflow-x: hidden;
-  overflow-y: hidden;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  overflow: hidden;
 }
 
-.recommended > a > img {
-  width: 13.8vw;
+.recommended {
+  padding: 6px;
+}
+
+.recommended a > img {
+  width: 12.9vw;
   height: 19.4vw;
-  margin-left: 2vw;
   border-radius: 0.8vw;
 }
 
