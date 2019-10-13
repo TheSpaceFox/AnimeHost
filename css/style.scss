@@ -220,9 +220,7 @@ and (min-device-width: 320px)
     width: 98%;
     height: 50vw;
     margin-left: 1.5vw;
-    justify-content: space-between;
-    -webkit-overflow-scrolling: touch;
-    scroll-snap-type: x mandatory;
+    @extend %scrollweb;
     a > img {
       width: 30vw;
       height: 45vw;

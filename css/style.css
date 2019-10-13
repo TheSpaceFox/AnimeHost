@@ -436,7 +436,7 @@ h4 {
         -ms-flex-pack: start;
             justify-content: flex-start;
   }
-  .slide-container, .playlist-container {
+  .slide-container, .playlist-container, #recommended-container {
     overflow: scroll;
     -webkit-overflow-scrolling: touch;
     -ms-scroll-snap-type: x mandatory;
@@ -492,12 +492,6 @@ h4 {
     width: 98%;
     height: 50vw;
     margin-left: 1.5vw;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -webkit-overflow-scrolling: touch;
-    -ms-scroll-snap-type: x mandatory;
-        scroll-snap-type: x mandatory;
   }
   #recommended-container a > img {
     width: 30vw;
