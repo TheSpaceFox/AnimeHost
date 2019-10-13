@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <meta http-equiv="Content-Language" content="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="Description" content="Pagina com a playlist do Anime">
@@ -11,58 +12,75 @@
     <link href="https://fonts.googleapis.com/css?family=Karla|Montserrat&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
+
 <body>
     <header>
-        <a class="icon" href="javascript:myFunction2()">
-            <i class="fa fa-search"></i>
-        </a>
-        <a href="../index.html"> <img id="logotipo" src="..\imagens\logotipo.png" alt="Logotipo AnimeHost" /> </a>
-        <nav>
-            <a class="icon" href="javascript:myFunction()">
+        <div class="fixed">
+            <a class="icon" href="javascript:searchbar_collapse()">
+                <i class="fa fa-search"></i>
+            </a>
+            <a href="#"> <img id="logotipo" src="..\imagens\logotipo.png" alt="Logotipo AnimeHost" /> </a>
+            <a class="icon" href="javascript:menu_collapse()">
                 <i class="fa fa-bars"></i>
             </a>
-            <ul id="menu">
-                <li><a href="../index.html">Home</a></li>
-                <li><a href="#"><b>Animes</b></a></li>
-                <li><a href="#">Em alta</a></li>
+            <nav>
+                <ul class="menu">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="index.html"><b>Animes</b></a></li>
+                    <li><a href="paginas/underconstruction.html">Em alta</a></li>
+                    <li><a href="#">Calendário</a></li>
+                </ul>
+            </nav>
+            <div id="form">
+                <input type="text" name="search" placeholder="Buscar Animes" />
+                <button class="search-button"><img src="../imagens/search.png" alt="Lupa"></button>
+            </div>
+
+            <div id="login">
+                <a href="#">
+                    <img src="../imagens/LaPhoto.png" alt="Foto de Perfil">
+                </a>
+            </div>
+        </div>
+        <nav id="menu_collapse">
+            <ul class="menu">
+                <li><a href="#">Home</a></li>
+                <li><a href="index.html"><b>Animes</b></a></li>
+                <li><a href="paginas/underconstruction.html">Em alta</a></li>
                 <li><a href="#">Calendário</a></li>
             </ul>
         </nav>
-        <div id="form">
-            <input type="search" name="search" placeholder="  Buscar Animes" />
-            <a href="resutadobuscas.html">
-    
-            </a>
-        </div>
-    
-        <div id="login"><a href="#"><img src="../imagens/LaPhoto.png" alt="Foto de Perfil"></a></div>
-    
     </header>
-
     <div class="main">
         <div class="main-holder">
-        <div class="anime-holder">
-            <h2> &#9734; 8/10 </h2>
-            <picture>
-                <source class="fundo" media="(min-width: 600px)" srcset="..\imagens\animes_thumbs\go_toubun_no_hanayome-large.jpg" />
-                <source class="fundo" srcset="../imagens/animes_thumbs/go_toubun_no_hanayome.jpg" />
-                <img class="fundo" src="/imagens/animes_thumbswebp/go_toubun_no_hanayome.jpg" alt="Go Toubun no Hanayome" />
-            </picture>
-            <h1> 5-Toubun no Hanayome </h1>
-            <img class="myanimelist" src="../imagens/myanimelist.png" alt="My Anime List Logo" />
-        </div>
+            <div class="anime-holder">
+                <h2> &#9734; 8/10 </h2>
+                <picture>
+                    <source class="fundo" media="(min-width: 600px)"
+                        srcset="..\imagens\animes_thumbs\go_toubun_no_hanayome-large.jpg" />
+                    <source class="fundo" srcset="../imagens/animes_thumbs/go_toubun_no_hanayome.jpg" />
+                    <img class="fundo" src="/imagens/animes_thumbswebp/go_toubun_no_hanayome.jpg"
+                        alt="Go Toubun no Hanayome" />
+                </picture>
+                <h1> 5-Toubun no Hanayome </h1>
+                <img class="myanimelist" src="../imagens/myanimelist.png" alt="My Anime List Logo" />
+            </div>
 
-        <div class="info-holder">
-        <h3> Estúdio <span> Tezuka Productions</span></h3>
-        <h3> Episódios <span>12</span></h3>
-        <h3> Gêneros <span class="genero" > Harem, Comédia, Romance, School </span></h3>
-        <h2> Sinopse </h2>
-        <p> Uesugi Fuutarou, um estudante do segundo ano do colegial que vem de uma família pobre, recebe uma irrecusável proposta
-        para trabalhar como tutor... e descobre que suas pupilas são suas colegas de classe! E pra piorar, são gêmeas
-        quíntuplas... Todas lindíssimas, mas com péssimas notas e um ódio mortal pelos estudos! Sua primeira missão será ganhar
-        a confiança das garotas?! Todo dia é dia de festa nesta comédia romântica 500% adorável envolvendo as irmãs gêmeas da
-        casa Nakano</p>
-        </div>
+            <div class="info-holder">
+                <h3> Estúdio <span> Tezuka Productions</span></h3>
+                <h3> Episódios <span>12</span></h3>
+                <h3> Gêneros <span class="genero"> Harem, Comédia, Romance, School </span></h3>
+                <h2> Sinopse </h2>
+                <p> Uesugi Fuutarou, um estudante do segundo ano do colegial que vem de uma família pobre, recebe uma
+                    irrecusável proposta
+                    para trabalhar como tutor... e descobre que suas pupilas são suas colegas de classe! E pra piorar,
+                    são gêmeas
+                    quíntuplas... Todas lindíssimas, mas com péssimas notas e um ódio mortal pelos estudos! Sua primeira
+                    missão será ganhar
+                    a confiança das garotas?! Todo dia é dia de festa nesta comédia romântica 500% adorável envolvendo
+                    as irmãs gêmeas da
+                    casa Nakano</p>
+            </div>
         </div>
 
         <h2> > Vídeos</h2>
@@ -117,9 +135,10 @@
         <a href="#">
             <img src="..\imagens\youtube.png" alt="Logotipo do Youtube">
         </a>
-    
+
         <h4> Felipe Ribeiro | Todos direitos reservados, ou não?</h4>
     </footer>
 
 </body>
+
 </html>

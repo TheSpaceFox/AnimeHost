@@ -133,6 +133,10 @@ span{
             border-radius: 0;
             border: $borda-large;
             font-size: 1vw;
+            a > img{
+                width: 5vw;
+                height: 5vw;
+            }
         }
     }
     .option-container{

@@ -15,38 +15,51 @@
 <body>
 
     <header>
-        <a class="icon" href="javascript:myFunction2()">
-            <i class="fa fa-search"></i>
-        </a>
-        <a href="../index.html"> <img id="logotipo" src="..\imagens\logotipo.png" alt="Logotipo AnimeHost" /> </a>
-        <nav>
-            <a class="icon" href="javascript:myFunction()">
+        <div class="fixed">
+            <a class="icon" href="javascript:searchbar_collapse()">
+                <i class="fa fa-search"></i>
+            </a>
+            <a href="#"> <img id="logotipo" src="..\imagens\logotipo.png" alt="Logotipo AnimeHost" /> </a>
+            <a class="icon" href="javascript:menu_collapse()">
                 <i class="fa fa-bars"></i>
             </a>
-            <ul id="menu">
-                <li><a href="../index.html">Home</a></li>
-                <li><a href="#"><b>Animes</b></a></li>
-                <li><a href="#">Em alta</a></li>
+            <nav>
+                <ul class="menu">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="index.html"><b>Animes</b></a></li>
+                    <li><a href="paginas/underconstruction.html">Em alta</a></li>
+                    <li><a href="#">Calendário</a></li>
+                </ul>
+            </nav>
+            <div id="form">
+                <input type="text" name="search" placeholder="Buscar Animes" />
+                <button class="search-button"><img src="../imagens/search.png" alt="Lupa"></button>
+            </div>
+    
+            <div id="login">
+                <a href="#">
+                    <img src="../imagens/LaPhoto.png" alt="Foto de Perfil">
+                </a>
+            </div>
+        </div>
+        <nav id="menu_collapse">
+            <ul class="menu">
+                <li><a href="#">Home</a></li>
+                <li><a href="index.html"><b>Animes</b></a></li>
+                <li><a href="paginas/underconstruction.html">Em alta</a></li>
                 <li><a href="#">Calendário</a></li>
             </ul>
         </nav>
-        <div id="form">
-            <input type="search" name="search" placeholder="  Buscar Animes" />
-            <a href="resutadobuscas.html">
-
-            </a>
-        </div>
-
-        <div id="login"><a href="#"><img src="../imagens/LaPhoto.png" alt="Foto de Perfil"></a></div>
-    
     </header>
 
     <div class="main">
         <div id="search">
             <input type="search" name="search" placeholder="  Buscar Animes" />
+            <!--
                 <a href="resutadobuscas.html">
-                    <img id="lupa" src="imagens\lupa.png" />
+                    <img id="lupa" src="../imagens/search.png" />
                 </a>
+            -->
         </div>
 
         <div class="option-container">

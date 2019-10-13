@@ -185,14 +185,17 @@ footer {
     display: none;
     flex-direction: column;
     width: 100%;
-    height: 20vw;
-    transition: all 1s;
+    height: 24.5vw;
   }
 
   .menu {
+    display: flex;
+    flex-wrap: wrap;
     width: 100%;
+    height: 24.5vw;
     background-color: #fff;
     li{
+      width: 100%;
       margin-left: 1.3vw;
       a{
        padding: 0.7vw;

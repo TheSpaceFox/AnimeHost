@@ -198,15 +198,20 @@ footer {
         -ms-flex-direction: column;
             flex-direction: column;
     width: 100%;
-    height: 20vw;
-    -webkit-transition: all 1s;
-    transition: all 1s;
+    height: 24.5vw;
   }
   .menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     width: 100%;
+    height: 24.5vw;
     background-color: #fff;
   }
   .menu li {
+    width: 100%;
     margin-left: 1.3vw;
   }
   .menu li a {
@@ -407,6 +412,10 @@ span {
     border-radius: 0;
     border: 0.06vw solid #707070;
     font-size: 1vw;
+  }
+  #search input a > img {
+    width: 2vw;
+    height: 2vw;
   }
   .option-container {
     -ms-grid-column-align: center;

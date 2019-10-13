@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="Description" content="Pagina com a playlist do Anime">
@@ -14,30 +15,41 @@
 
 <body>
     <header>
-        <a class="icon" href="javascript:myFunction2()">
-            <i class="fa fa-search"></i>
-        </a>
-        <a href="../index.html"> <img id="logotipo" src="..\imagens\logotipo.png" alt="Logotipo AnimeHost" /> </a>
-        <nav>
-            <a class="icon" href="javascript:myFunction()">
+        <div class="fixed">
+            <a class="icon" href="javascript:searchbar_collapse()">
+                <i class="fa fa-search"></i>
+            </a>
+            <a href="#"> <img id="logotipo" src="..\imagens\logotipo.png" alt="Logotipo AnimeHost" /> </a>
+            <a class="icon" href="javascript:menu_collapse()">
                 <i class="fa fa-bars"></i>
             </a>
-            <ul id="menu">
-                <li><a href="../index.html">Home</a></li>
-                <li><a href="#"><b>Animes</b></a></li>
-                <li><a href="#">Em alta</a></li>
+            <nav>
+                <ul class="menu">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="index.html"><b>Animes</b></a></li>
+                    <li><a href="paginas/underconstruction.html">Em alta</a></li>
+                    <li><a href="#">Calendário</a></li>
+                </ul>
+            </nav>
+            <div id="form">
+                <input type="text" name="search" placeholder="Buscar Animes" />
+                <button class="search-button"><img src="../imagens/search.png" alt="Lupa"></button>
+            </div>
+
+            <div id="login">
+                <a href="#">
+                    <img src="../imagens/LaPhoto.png" alt="Foto de Perfil">
+                </a>
+            </div>
+        </div>
+        <nav id="menu_collapse">
+            <ul class="menu">
+                <li><a href="#">Home</a></li>
+                <li><a href="index.html"><b>Animes</b></a></li>
+                <li><a href="paginas/underconstruction.html">Em alta</a></li>
                 <li><a href="#">Calendário</a></li>
             </ul>
         </nav>
-        <div id="form">
-            <input type="search" name="search" placeholder="  Buscar Animes" />
-            <a href="resutadobuscas.html">
-
-            </a>
-        </div>
-
-        <div id="login"><a href="#"><img src="../imagens/LaPhoto.png" alt="Foto de Perfil"></a></div>
-
     </header>
 
     <div class="main">
@@ -45,10 +57,11 @@
             <div class="anime-holder">
                 <h4> &#9734; 8/10 </h4>
                 <picture>
-                    <source class="fundo" media="(min-width: 600px)" srcset="../imagens/animes_thumbs/bokunohero2-large.jpg" />
+                    <source class="fundo" media="(min-width: 600px)"
+                        srcset="../imagens/animes_thumbs/bokunohero2-large.jpg" />
                     <source class="fundo" srcset="../imagens/animes_thumbs/bokunohero2.jpg" />
                     <img class="fundo" src="/imagens/animes_thumbswebp/bokunohero2-large.jpg" />
-                </picture>         
+                </picture>
                 <h1> Boku no Hero Academia 2 </h1>
                 <img class="myanimelist" src="../imagens/myanimelist.png" alt="My Anime List Logo" />
             </div>
