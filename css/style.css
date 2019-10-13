@@ -490,8 +490,6 @@ h4 {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    overflow-x: auto;
-    overflow-y: hidden;
     -webkit-overflow-scrolling: touch;
     -ms-scroll-snap-type: x mandatory;
         scroll-snap-type: x mandatory;
@@ -504,14 +502,12 @@ h4 {
   }
   .playlist {
     scroll-snap-align: start;
-    margin-right: 3vw;
   }
   .playlist a > h3 {
     font-size: 3vw;
   }
   .recommended {
     scroll-snap-align: start;
-    margin-right: 3vw;
   }
 }
 /*# sourceMappingURL=style.css.map */

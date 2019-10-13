@@ -221,8 +221,6 @@ and (min-device-width: 320px)
     height: 50vw;
     margin-left: 1.5vw;
     justify-content: space-between;
-    overflow-x: auto;
-    overflow-y: hidden;
     -webkit-overflow-scrolling: touch;
     scroll-snap-type: x mandatory;
     a > img {
@@ -235,7 +233,6 @@ and (min-device-width: 320px)
 
   .playlist{
     scroll-snap-align: start;
-    margin-right: 3vw;
     a > h3{
       font-size: 3vw;
     }
@@ -243,6 +240,5 @@ and (min-device-width: 320px)
 
   .recommended{
     scroll-snap-align: start;
-    margin-right: 3vw;
   }
 }
