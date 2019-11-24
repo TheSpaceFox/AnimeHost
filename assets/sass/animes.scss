@@ -1,0 +1,189 @@
+$borda: .075em solid #707070;
+$borda2:   .375em;
+$borda2-large: 1.83em; 
+$borda-large: 1px solid #707070;
+
+main{
+    display: flex;
+    flex-direction: column;
+}
+
+h1{
+    text-align: center;
+    font-size: 1.875em;
+    span{
+    text-align: center;
+    font-size: 8.64em;
+    color: #b30211;
+    }
+}
+
+h5{
+    color: #000;
+}
+
+span{
+    display: block;
+    text-align: center;
+    color: #707070;
+    font-size: 0.94em;
+}
+
+.search{
+    align-self: center;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    justify-content: center;
+	width: 100%;
+    height: 18vw;
+    input{
+        border: $borda;
+        border-radius: $borda2;
+        width: 73.188vw;
+        height: 9.903vw;
+        font-style: 'Karla';
+        font-size: 1.5em;
+    }
+}
+
+.search-button-invisible{
+    display: none;
+    img{
+        display: none;
+    }
+}
+
+
+.option-container{
+    align-self: center;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 10vw; 
+    border-bottom: $borda;
+}
+
+#genero{
+    margin-left: 1.6em;
+}
+
+#genero, #studio, #numep{
+    width: 29vw;
+    height: 8.696vw;
+    margin-right: 1.125em;
+    background-color: transparent;
+    border: transparent;
+}
+
+.anime-container{
+    align-self: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: auto;
+}
+
+.anime{
+    margin-top: 1.5em;
+    height: 72vw;
+    width: 40vw;
+    border-radius: $borda2;
+    background-color: #fff;
+    img{
+        margin-top: 0;
+        margin-bottom: 0.375em;
+        width: 40vw;
+        height: 60vw;
+        border-radius: $borda2;
+    }
+}
+
+.caracteristica{
+    display: none;
+}
+
+@media only screen 
+  and (min-device-width: 600px) 
+  and (max-device-width: 1920px) {
+    h1{
+        font-size: 3em;
+        margin-bottom: 0;
+        span{
+            font-size: 2.88em;
+        }
+    }
+    span{
+        font-size: 1em;
+    }
+
+    .search{
+        width: 55%;
+        height: 4.5vw;
+        input{
+            width: 60vw;
+            height: 3vw;
+            border-radius: 0;
+            border: $borda-large;
+            font-size: 1.9em;
+            a > img{
+                width: 5vw;
+                height: 5vw;
+            }
+        }
+    }
+    .option-container{
+        width: 33%;
+        height: 3vw; 
+        border-bottom: $borda-large;
+    }
+    
+    #genero, #studio, #numep{
+        margin-right: 3.85em;
+        min-width: 8vw;
+        max-width: 50px;
+        height: 2.5vw;
+        font-size: 1.5em;
+    }
+
+    .anime-container{
+        min-width: 30%;
+        max-width: 70%;
+    }
+
+    .anime{
+        background-color: #fff;
+        height: 20vw;
+        max-height: 350px;
+        width: 9.309vw;
+        margin-right: 1.92em;
+        margin-top: 3.85em;
+        border-radius: $borda2-large;
+        img{
+            margin-top: 0;
+            width: 9.309vw;
+            height: 14vw;
+            margin-bottom: .96em;
+            border-radius: $borda2-large;
+        }
+    }
+
+    .anime:hover{
+        box-shadow: 0 0 19px #000000;
+        transition: all 250ms ease-in;
+        transform: scale(1.1);
+    }
+
+    .caracteristica{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        a > h5{
+            margin-top: 1.92em;
+            font-size: 1.92em;
+        }
+
+    }
+}

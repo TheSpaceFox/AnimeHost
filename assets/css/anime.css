@@ -1,0 +1,227 @@
+.anime-holder {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 20% 50% 30%;
+      grid-template-rows: 20% 50% 30%;
+  -ms-grid-columns: 20% auto 14%;
+      grid-template-columns: 20% auto 14%;
+  width: 100%;
+  height: 77.067vw;
+}
+
+.anime-holder h1 {
+  position: relative;
+  -ms-grid-row: 3;
+  grid-row: 3;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1/2;
+  text-shadow: 2px 1.5px #707070;
+  font-size: 8vw;
+  color: #fff;
+  width: 50vw;
+  margin-left: 3vw;
+  margin-bottom: 3.5vw;
+}
+
+h2 {
+  font-size: 6vw;
+  margin-left: 6.2vw;
+  margin-bottom: 0.5vw;
+}
+
+p {
+  font-size: 3.2vw;
+  color: #707070;
+  text-align: justify;
+  margin-left: 6.2vw;
+  margin-right: 6.2vw;
+}
+
+picture {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-column: 1/4;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 3;
+  grid-row: 1/4;
+  -webkit-filter: brightness(0.8);
+          filter: brightness(0.8);
+  opacity: 0.9;
+}
+
+.fundo {
+  width: 100%;
+  height: 100%;
+}
+
+.myanimelist {
+  position: relative;
+  width: 8.533vw;
+  height: 8.533vw;
+  -ms-grid-column: 3;
+  grid-column: 3;
+  -ms-grid-row: 3;
+  grid-row: 3;
+  -ms-flex-item-align: end;
+      -ms-grid-row-align: end;
+      align-self: end;
+  margin: 3vw;
+  border-radius: 5.333vw;
+}
+
+.info-holder h3 {
+  display: none;
+}
+
+.playlist-holder {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+h3 {
+  font-size: 4vw;
+  float: right;
+}
+
+.playlist {
+  margin-top: 3.5vw;
+  width: 90%;
+}
+
+.playlist h3 {
+  width: 40vw;
+}
+
+.playlist span {
+  font-size: 2.5vw;
+  display: block;
+}
+
+.playlist a {
+  color: #000;
+}
+
+.playlist a > img {
+  width: 45.867vw;
+  height: 25.600vw;
+  border-radius: 1.1vw;
+}
+
+@media only screen and (min-device-width: 600px) and (max-device-width: 1920px) {
+  .main {
+    padding-top: 3.8em;
+    padding-left: 19.2em;
+    padding-right: 19.2em;
+  }
+  .main-holder {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    height: 23.8vw;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .info-holder {
+    width: 30vw;
+    height: 21.8vw;
+    padding: 1.9em;
+    margin-left: 1.9em;
+    border-left: solid 1.5px #c9c7c7;
+  }
+  .info-holder h2 {
+    margin: 0;
+  }
+  .info-holder h3 {
+    display: block;
+    width: 100%;
+    margin-top: .2em;
+    margin-bottom: .2em;
+  }
+  .anime-holder {
+    width: 42.344vw;
+    height: 23.8vw;
+  }
+  .anime-holder h1 {
+    font-size: 3.8em;
+    width: auto;
+    min-width: 20vw;
+    height: auto;
+    max-width: 30vw;
+    margin-left: 0.5em;
+    margin-bottom: 0.19em;
+  }
+  .anime-holder h4 {
+    font-size: 1.9em;
+  }
+  p {
+    font-size: 1.8em;
+    margin: 0;
+    -ms-flex-item-align: end;
+        align-self: flex-end;
+  }
+  h2 {
+    font-size: 2.5em;
+  }
+  h3 {
+    font-size: 2.4em;
+    display: block;
+  }
+  h3 span {
+    color: #707070;
+    font-size: 0.94vw;
+  }
+  .genero {
+    display: block;
+  }
+  .myanimelist {
+    width: 2.396vw;
+    height: 2.396vw;
+    margin: 3.84em;
+  }
+  .playlist-holder {
+    width: 100%;
+    padding-right: 3.8em;
+    padding-left: 3.8em;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .playlist {
+    margin-top: 2.8em;
+    width: 40%;
+  }
+  .playlist h3 {
+    width: 15vw;
+  }
+  .playlist span {
+    font-size: 0.8em;
+  }
+  .playlist a > img {
+    width: 16.15vw;
+    height: 9vw;
+    border-radius: 2.1em;
+  }
+}
+/*# sourceMappingURL=anime.css.map */

@@ -1,0 +1,119 @@
+h1 {
+  text-align: center;
+  font-size: 5vw;
+}
+
+.hot {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.video {
+  -ms-flex-item-align: center;
+      align-self: center;
+  margin-top: 8vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 46vw;
+  height: auto;
+  background-color: white;
+  border-radius: 4.8vw;
+}
+
+.video a {
+  font-size: 3vw;
+  color: #707070;
+}
+
+.video a img {
+  border-radius: 4.8vw;
+  width: 45.867vw;
+  height: 25.600vw;
+}
+
+.video a h2 {
+  margin-top: 2.5px;
+  margin-bottom: 2.5px;
+  color: black;
+}
+
+.video a h2 span {
+  font-weight: bold;
+}
+
+.video a h3 {
+  margin-top: 1px;
+  margin-bottom: 1px;
+  font-size: 3vw;
+  font-weight: lighter;
+}
+
+.ad {
+  display: none;
+}
+
+@media only screen and (min-device-width: 600px) and (max-device-width: 1920px) {
+  main {
+    padding: 20px;
+    height: 65vw;
+  }
+  h1 {
+    font-size: 1.8vw;
+    margin-bottom: 0;
+  }
+  .hot {
+    max-height: 13vw;
+    height: auto;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .video {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 16.15vw;
+    height: 20vw;
+    margin-top: 2vw;
+    margin-left: 2vw;
+    background-color: #fff;
+    border-radius: 1vw;
+  }
+  .video a {
+    font-size: 3vw;
+    color: #707070;
+  }
+  .video a img {
+    border-radius: 1vw;
+    width: 16.15vw;
+    height: 9vw;
+  }
+  .video a h2 {
+    margin-top: 1.5px;
+    margin-bottom: 1.5px;
+    font-size: 1.2vw;
+    color: black;
+  }
+  .video a h3 {
+    margin-top: 1px;
+    margin-bottom: 1px;
+    font-size: 0.8vw;
+    font-weight: lighter;
+  }
+}
+/*# sourceMappingURL=emalta.css.map */

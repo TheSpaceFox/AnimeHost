@@ -1,0 +1,97 @@
+h1{
+    text-align: center;
+    font-size: 5vw;
+}
+.hot{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.video{
+    align-self: center;
+    margin-top: 8vw;
+    display: flex;
+    width: 46vw;
+    height: auto;
+    background-color: white;
+    border-radius: 4.8vw;
+    a{
+        font-size: 3vw;
+        color: #707070;
+        img{
+            border-radius: 4.8vw;
+            width: 45.867vw;
+            height: 25.600vw;
+        }
+        h2{
+            margin-top: 2.5px;
+            margin-bottom: 2.5px;
+            color: black;
+            span{
+                font-weight: bold;
+            }
+        }
+        h3{
+            margin-top: 1px;
+            margin-bottom: 1px;
+            font-size: 3vw;
+            font-weight: lighter;
+        }
+    }
+}
+
+.ad{
+    display: none;
+}
+
+
+@media only screen 
+  and (min-device-width: 600px) 
+  and (max-device-width: 1920px){
+      main{
+          padding: 20px;
+          height: 65vw;
+      }
+      h1{
+          font-size: 1.8vw;
+          margin-bottom: 0;
+      }
+      .hot{
+          max-height: 13vw;
+          height: auto;
+          flex-direction: row;
+          justify-content: space-between;
+      }
+      .video{
+        display: flex;
+        width: 16.15vw;
+        height: 20vw;
+        margin-top: 2vw;
+        margin-left: 2vw;
+        background-color: #fff;
+        border-radius: 1vw;
+        a{
+            font-size: 3vw;
+            color: #707070;
+            img{
+                border-radius: 1vw;
+                width: 16.15vw;
+                height: 9vw;
+            }
+            h2{
+                margin-top: 1.5px;
+                margin-bottom: 1.5px;
+                font-size: 1.2vw;
+                color: black;
+            }
+            h3{
+                margin-top: 1px;
+                margin-bottom: 1px;
+                font-size: 0.8vw;
+                font-weight: lighter;
+            }
+        }
+    }
+  }

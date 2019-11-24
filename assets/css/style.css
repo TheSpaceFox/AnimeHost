@@ -1,0 +1,260 @@
+h4 {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  margin-right: 0.6vw;
+}
+
+.slide-container {
+  overflow: hidden;
+  width: 100%;
+  height: 22vw;
+  max-height: 380px;
+  text-align: center;
+}
+
+.image-container {
+  position: relative;
+  width: 400vw;
+  height: 22vw;
+  max-height: 380px;
+  -webkit-transition: left 2s;
+  transition: left 2s;
+}
+
+.image-container a:nth-child(1) .slider-image {
+  background-image: url("../imagens/boku_no_hero_quarta_temporada.jpg");
+}
+
+.image-container a:nth-child(2) .slider-image {
+  background-image: url("../imagens/swordaronline_alicization_war_of_underworld.jpg");
+}
+
+.image-container a:nth-child(3) .slider-image {
+  background-image: url("../imagens/nanatsu_no_taizai_terceira_temporada.jpg");
+}
+
+.image-container a:nth-child(4) .slider-image {
+  background-image: url("../imagens/shougeki_no_souma_terceira_temporada.jpg");
+}
+
+.slider-image {
+  float: left;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100vw;
+  height: 100%;
+  /* Parallax */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.slider-image span {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  margin: 1.9em;
+}
+
+.slider-image h1, .slider-image h3 {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  margin: 0.1em;
+  color: #000;
+}
+
+.slider-image h3 {
+  float: right;
+  font-size: 3em;
+}
+
+.button-container {
+  position: relative;
+  top: -3em;
+}
+
+.slider-button {
+  display: inline-block;
+  width: 0.65vw;
+  height: 0.65vw;
+  border-radius: 0.85em;
+  background-color: #fff;
+  opacity: 1;
+}
+
+.slider-button:hover {
+  background-color: #707070;
+}
+
+#slider-image-01:target ~ .image-container {
+  left: 0;
+}
+
+#slider-image-02:target ~ .image-container {
+  left: -100vw;
+}
+
+#slider-image-03:target ~ .image-container {
+  left: -200vw;
+}
+
+#slider-image-04:target ~ .image-container {
+  left: -300vw;
+}
+
+/* Playlist */
+.playlist-container {
+  margin: 0 auto;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 90%;
+  height: 12vw;
+  max-height: 200px;
+}
+
+.playlist {
+  padding: 0.6em;
+  text-align: center;
+}
+
+.playlist a {
+  color: #000;
+}
+
+.playlist a > img {
+  width: 14vw;
+  height: 8.05vw;
+  border-radius: 1em;
+}
+
+#recommended-container {
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  overflow: hidden;
+  min-width: 60%;
+  max-width: 90%;
+  height: 15vw;
+  max-height: 280px;
+}
+
+.recommended {
+  padding: 0.6em;
+}
+
+.recommended a > img {
+  width: 9.309vw;
+  height: 14vw;
+  border-radius: 1.5em;
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 599px) {
+  .main {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  .slide-container, .playlist-container, #recommended-container {
+    overflow: scroll;
+    -webkit-overflow-scrolling: touch;
+    -ms-scroll-snap-type: x mandatory;
+        scroll-snap-type: x mandatory;
+  }
+  /* Main */
+  .slide-container {
+    width: 95%;
+    margin: 0 auto;
+    height: 50vw;
+    margin-top: 1.125em;
+    border-radius: 1.875em;
+  }
+  .image-container {
+    width: 400vw;
+    height: 50vw;
+    border-radius: 1.875em;
+  }
+  .slider-image {
+    scroll-snap-align: start;
+  }
+  .slider-image h1, .slider-image h3 {
+    color: #fff;
+    text-shadow: 2px 1.5px #707070;
+  }
+  .slider-image h1 {
+    font-size: 2.625em;
+  }
+  .slider-image h3 {
+    float: right;
+    font-size: 1.5em;
+  }
+  .info {
+    max-width: 70%;
+  }
+  .button-container {
+    display: none;
+  }
+  .playlist-container {
+    width: 98%;
+    height: auto;
+    margin-left: 0.5625em;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .playlist-container a img {
+    width: 40vw;
+    height: 22.34vw;
+    border-radius: 0.41em;
+  }
+  .playlist {
+    height: 35vw;
+  }
+  #recommended-container {
+    width: 98%;
+    height: auto;
+    margin-left: .5625em;
+  }
+  #recommended-container a > img {
+    width: 30vw;
+    height: 45vw;
+    margin: .75em;
+    border-radius: .675em;
+  }
+  .playlist {
+    scroll-snap-align: start;
+  }
+  .playlist a > h3 {
+    font-size: 1.125em;
+  }
+  .recommended {
+    scroll-snap-align: start;
+  }
+}
+/*# sourceMappingURL=style.css.map */

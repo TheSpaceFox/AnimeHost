@@ -1,0 +1,16 @@
+	</main>
+	<footer>
+		<div class="social-holder">
+			<a href="https://www.instagram.com/thespace_fox/">
+				<img src="assets\imagens\insta.png" alt="Logotipo do Instagram">
+			</a>
+			<a href="https://twitter.com/sthespacefox">
+				<img src="assets\imagens\twitter.png" alt="Logotipo do Twitter">
+			</a>
+			<a href="https://www.youtube.com/channel/UCWYH6Q6NHEhaz24JhT9o3aQ">
+				<img src="assets\imagens\youtube.png" alt="Logotipo do Youtube">
+			</a>
+		</div>
+		<h4> Felipe Ribeiro | Todos direitos reservados, ou não?</h4>
+	</footer>
+</body>
