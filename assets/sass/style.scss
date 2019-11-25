@@ -55,15 +55,19 @@ h4{
   span{
     align-self: flex-end;
     margin: 1.9em; 
+    color: #fff;
   }
   h1,h3{
     align-self: flex-end;
     margin: 0.1em;
-    color: #000;
+  }
+  h1{
+    text-shadow: 3.5px 3px $cinza-escuro;
   }
   h3{
     float: right;
     font-size: 3em;
+    text-shadow: 3px 2.5px $cinza-escuro;
   }
 }
 
@@ -109,8 +113,9 @@ h4{
   flex-direction: row;
   justify-content: space-between;
   width: 90%;
+  max-width: 1920px;
   height: 12vw;
-  max-height: 200px;
+  max-height: 250px;
 }
 
 .playlist {
@@ -121,7 +126,9 @@ h4{
   }
   a > img {
     width: 14vw;
+    max-width: 300px;
     height: 8.05vw;
+    max-height: 172.5px;
     border-radius: 1em;
   }
 }
@@ -134,8 +141,9 @@ h4{
   overflow: hidden;
   min-width: 60%;
   max-width: 90%;
+  max-width: 1920px;
   height: 15vw;
-  max-height: 280px;
+  max-height: 450px;
 }
 
 .recommended {
@@ -147,10 +155,14 @@ h4{
   }
 }
 
+@media screen and (max-width: 1920px) {
+  #recommended-container, .playlist-container{
+    max-width: 1600px;
+  }
+}
 
-@media only screen 
-and (min-device-width: 320px) 
-  and (max-device-width: 599px) {
+
+@media screen and (max-width: 599px) {
     
   .main{
     width: 100%;
@@ -189,7 +201,7 @@ and (min-device-width: 320px)
       text-shadow: 2px 1.5px $cinza-escuro;
     }
     h1{
-    font-size: 2.625em;
+    font-size: 2.5em;
     }
     h3{
     float: right;

@@ -1,11 +1,15 @@
 <?php
-$link = mysqli_connect("localhost", "id11043460_root", "qpwoeiruty10", "id11043460_animehost");
+$servername = "localhost";
+$username = "root";
+$password = null;
+$database = "animehost";
+$link = mysqli_connect($servername, $username, $password, $database);
 mysqli_set_charset($link, 'utf8');
 $resultvideo = mysqli_query($link, "SELECT * FROM video ORDER BY views DESC LIMIT 15");
 $aux = mysqli_fetch_assoc($resultvideo);
-$result = mysqli_query($link, "SELECT * FROM paginas WHERE id Like {$aux["id_fk"]}");
-$nomeanime = mysqli_fetch_assoc($result);
+$result = mysqli_query($link, "SELECT * FROM paginas WHERE id LIKE {$aux["id_fk"]}");
 $i = 1;
+
 echo file_get_contents("../assets/header-hot.txt");
 
 echo "<h1> > Vídeos mais acessados </h1>

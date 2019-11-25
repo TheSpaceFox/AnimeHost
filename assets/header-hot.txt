@@ -34,7 +34,7 @@
 					<li><a href="../calendario/index.html">Calendário</a></li>
 				</ul>
 			</nav>
-			<div id="form">
+			<div id="pesquisa">
 				<input type="text" id="search" placeholder="Buscar Animes" />
 				<button class="search-button" id="enter" onclick="javascript:search()"><img src="../assets/imagens/search.png" alt="Lupa"></button>
 			</div>
@@ -50,7 +50,7 @@
 
 			</script>
 			
-			<div id="login">
+			<div class="user">
 				<a href="#">
 					<img src="../assets/imagens/LaPhoto.png" alt="Foto de Perfil">
 				</a>

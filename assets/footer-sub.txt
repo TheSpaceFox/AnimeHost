@@ -1,3 +1,4 @@
+	</main>
 	<footer>
 		<div class="social-holder">
 			<a href="https://www.instagram.com/thespace_fox/">

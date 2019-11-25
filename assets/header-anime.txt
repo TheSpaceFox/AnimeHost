@@ -40,36 +40,6 @@
 			</div>
 
 			<script>
-			var input = document.getElementById("search");
-			input.addEventListener("keyup", function(event) {
-    			if (event.keyCode === 13) {
-       				event.preventDefault();
-     				document.getElementById("enter").click();
-    			}
-			});
-
-			(function(window, document, undefined) {
-  			'use strict';
-  
-  			var	targetLayoutWidth = 1920,
-    		baseFontsize = 10,
-    		htmlElement = document.getElementsByTagName('html')[0],
-    		documentElement = document.documentElement;
-  			function updateFontsize() {
-
-			if (document.offsetWidth < 1920){
-    		var currentFontsize = Math.floor(baseFontsize * (documentElement.offsetWidth / targetLayoutWidth));
-      
-    		htmlElement.style.fontSize = currentFontsize + 'px';
-			}
-  			}
-    
-  			window.addEventListener('resize', updateFontsize, false);
-  			window.addEventListener('orientationchange', updateFontsize, false);
-  
-  			updateFontsize();
-			}(window, document));
-
 			</script>
 			
 			<div class="user">

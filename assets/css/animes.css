@@ -49,7 +49,7 @@ span {
 }
 
 .search input {
-  border: 0.075em solid #707070;
+  border: 0.75px solid #707070;
   border-radius: 0.375em;
   width: 73.188vw;
   height: 9.903vw;
@@ -76,7 +76,7 @@ span {
           align-items: center;
   width: 100%;
   height: 10vw;
-  border-bottom: 0.075em solid #707070;
+  border-bottom: 0.75px solid #707070;
 }
 
 #genero {
@@ -128,7 +128,7 @@ span {
   display: none;
 }
 
-@media only screen and (min-device-width: 600px) and (max-device-width: 1920px) {
+@media only screen and (min-width: 600px) and (max-width: 1920px) {
   h1 {
     font-size: 3em;
     margin-bottom: 0;

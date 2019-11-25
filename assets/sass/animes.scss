@@ -1,4 +1,4 @@
-$borda: .075em solid #707070;
+$borda: 0.75px solid #707070;
 $borda2:   .375em;
 $borda2-large: 1.83em; 
 $borda-large: 1px solid #707070;
@@ -106,8 +106,8 @@ span{
 }
 
 @media only screen 
-  and (min-device-width: 600px) 
-  and (max-device-width: 1920px) {
+  and (min-width: 600px) 
+  and (max-width: 1920px) {
     h1{
         font-size: 3em;
         margin-bottom: 0;

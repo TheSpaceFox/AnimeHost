@@ -6,15 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>AnimeHost</title>
-    <script src="../../assets/js/script.js"></script>
-	<link href="https://vjs.zencdn.net/7.5.5/video-js.css" rel="stylesheet" />
+	<script src="../../assets/js/script.js"></script>
+	<link rel="stylesheet" href="https://cdn.plyr.io/3.5.6/plyr.css" />
+	<script id="dsq-count-scr" src="//theanimehost.disqus.com/count.js" async></script>
     <link rel="stylesheet" type="text/css" href="../../assets/css/template.css">
     <link rel="stylesheet" type="text/css" href="../../assets/css/video.css">
     <link href="https://fonts.googleapis.com/css?family=Karla|Montserrat&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/7b6fc47442.js" crossorigin="anonymous"></script>
-    <script>
-	
-    </script>
+	<script src="https://cdn.plyr.io/3.5.6/plyr.js"></script>
+	<script>
+		document.addEventListener('DOMContentLoaded', () => {
+			const player = Plyr.setup('.js-player');
+		});
+	</script>
 </head>
 <body>
 
@@ -31,27 +35,15 @@
 				<ul class="menu">
 					<li><a href="../../index.php"><b>Home</b></a></li>
 					<li><a href="../index.php">Animes</a></li>
-					<li><a href="emalta/emalta.php">Em alta</a></li>
+					<li><a href="../../emalta/index.php">Em alta</a></li>
 					<li><a href="calendario/calendario.html">Calendário</a></li>
 				</ul>
 			</nav>
-			<div id="form">
+			<div id="pesquisa">
 				<input type="text" id="search" placeholder="Buscar Animes" />
 				<button class="search-button" id="enter" onclick="search()"><img src="../../assets/imagens/search.png" alt="Lupa"></button>
 			</div>
-
-			<script>
-			var input = document.getElementById("search");
-			input.addEventListener("keyup", function(event) {
-    			if (event.keyCode === 13) {
-       				event.preventDefault();
-     				document.getElementById("enter").click();
-    			}
-			});
-
-			</script>
-
-			<div id="login">
+			<div class="user">
 				<a href="#">
 					<img src="../../assets/imagens/LaPhoto.png" alt="Foto de Perfil">
 				</a>
@@ -67,4 +59,3 @@
 		</nav>
 	</header>
 	<main>
-

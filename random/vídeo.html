@@ -8,11 +8,17 @@
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>AnimeHost</title>
 	<script src="../assets/js/script.js"></script>
-	<link href="https://vjs.zencdn.net/7.5.5/video-js.css" rel="stylesheet" />
+	<link rel="stylesheet" href="https://cdn.plyr.io/3.5.6/plyr.css" />
 	<link rel="stylesheet" type="text/css" href="../assets/css/template.css">
-	<link rel="stylesheet" type="text/css" href="assets/css/video.css">
+	<link rel="stylesheet" type="text/css" href="../assets/css/video.css">
 	<link href="https://fonts.googleapis.com/css?family=Karla|Montserrat&display=swap" rel="stylesheet">
 	<script src="https://kit.fontawesome.com/7b6fc47442.js" crossorigin="anonymous"></script>
+	<script src="https://cdn.plyr.io/3.5.6/plyr.js"></script>
+	<script>
+		document.addEventListener('DOMContentLoaded', () => {
+			const player = Plyr.setup('.js-player');
+		});
+	</script>
 </head>
 
 <body>
@@ -34,12 +40,12 @@
 					<li><a href="calendario/calendario.html">Calendário</a></li>
 				</ul>
 			</nav>
-			<div id="form">
+			<div id="pesquisa">
 				<input type="text" name="search" placeholder="Buscar Animes" />
 				<button class="search-button"><img src="../assets/imagens/lupa.png" alt="Lupa"></button>
 			</div>
 
-			<div id="login">
+			<div class="user">
 				<a href="#">
 					<img src="../assets/imagens/LaPhoto.png" alt="Foto de Perfil">
 				</a>
@@ -54,22 +60,16 @@
 			</ul>
 		</nav>
 	</header>
-
-
 	<main>
+
 		<div class="video-holder">
-			<video id="video" class="video-js" controls preload="auto" poster="thumb.jpg" data-setup="{}">
-				<source src="teste.mp4" type="video/mp4" />
-				<p class="vjs-no-js">
-					Para ver esse vídeo ative o suporte ao Javascript, ou instale um navegador que tenha suporte
-					<a href="https://videojs.com/html5-video-support/" target="_blank">Suporta vídeo baseado em
-						HTML5</a>
-				</p>
-			</video>
-			<script src="https://vjs.zencdn.net/7.5.5/video.js"></script>
+			<div class="video-container">
+				<video poster="" class="js-player">
+					<source src="" />
+				</video>
+			</div>
 			<hgroup>
-				<h1> Conexão Zona Sul - Racionais MC's ft. ClariS </h1>
-				<h3> 1k views </h3>
+				<h1> Konosuba - Episódio 1 - “Essa Autoproclamada Deusa e Reencarnação em Outro Mundo!” </h1>
 			</hgroup>
 			<div class="actions">
 				<a> <i class="fas fa-bars"></i> </a>
@@ -78,26 +78,36 @@
 				<a> <i class="fas fa-heart"></i> </a>
 				<a> <i class="fas fa-share-alt"></i> </a>
 				<a class="collapsible" href="javascript:desceai()"> <i class="fas fa-caret-down"></i> </a>
+				<h3> 2873 visualizações </h3>
 			</div>
-		</div>
-		<div id="moreinfo">
-			<img src="assets/imagens/posters/5toubunnohanayomeposter.jpg" alt="Poster do Anime">
-			<hgroup>
-				<h4> 5 Toubun no Hanayome </h4>
-				<h4> <span> 24 </span> Vídeo(s) </h4>
-				<h4> <span> Estudio </span> qualquer ai </h4>
-				<p> Uesugi Fuutarou, um estudante do segundo ano do colegial que vem de uma família pobre, recebe uma
-					irrecusável proposta
-					para trabalhar como tutor... e descobre que suas pupilas são suas colegas de classe! E pra piorar,
-					são
-					gêmeas
-					quíntuplas... Todas lindíssimas, mas com péssimas notas e um ódio mortal pelos estudos! Sua primeira
-					missão será ganhar
-					a confiança das garotas?! Todo dia é dia de festa nesta comédia romântica 500% adorável envolvendo
-					as
-					irmãs gêmeas da
-					casa Nakano</p>
-			</hgroup>
+			<div id="moreinfo">
+				<img src="../assets/imagens/posters/5toubunnohanayomeposter.jpg" alt="Poster do Anime">
+				<hgroup>
+					<h4> 5 Toubun no Hanayome </h4>
+					<h4> <span> 24 </span> Vídeo(s) </h4>
+					<h4> <span> Estudio </span> qualquer ai </h4>
+					<p> Uesugi Fuutarou, um estudante do segundo ano do colegial que vem de uma família pobre, recebe
+						uma
+						irrecusável proposta
+						para trabalhar como tutor... e descobre que suas pupilas são suas colegas de classe! E pra
+						piorar,
+						são
+						gêmeas
+						quíntuplas... Todas lindíssimas, mas com péssimas notas e um ódio mortal pelos estudos! Sua
+						primeira
+						missão será ganhar
+						a confiança das garotas?! Todo dia é dia de festa nesta comédia romântica 500% adorável
+						envolvendo
+						as
+						irmãs gêmeas da
+						casa Nakano</p>
+				</hgroup>
+				<div class="semelhante">
+					<h4> Animes do mesmo gênero </h4>
+					<img src="../assets/imagens/posters/5toubunnohanayomeposter.jpg" alt="Poster do Anime">
+					<img src="../assets/imagens/posters/5toubunnohanayomeposter.jpg" alt="Poster do Anime">
+				</div>
+			</div>
 
 			<script>
 				function desceai() {
@@ -109,32 +119,57 @@
 					}
 				}
 			</script>
+			<div id="disqus_thread"></div>
+			<script>
+			
+			/**
+			*  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+			*  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+			/*
+			var disqus_config = function () {
+			this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+			this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+			};
+			*/
+			(function() { // DON'T EDIT BELOW THIS LINE
+			var d = document, s = d.createElement('script');
+			s.src = 'https://animehost.disqus.com/embed.js';
+			s.setAttribute('data-timestamp', +new Date());
+			(d.head || d.body).appendChild(s);
+			})();
+			</script>
+			<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
 		</div>
-		<div class="playlist-holder">
-			<h2> > Outros episódios</h2>
-			<div class="playlist">
-				<a href="#">
-					<img src="assets/imagens/animes_thumbs/7/miniaturas/1.jpg" alt="Thumbnail" />
-					<h3> <span> Episódio X </span> Título do Episódio <span> Tempo X </span> </h3>
-				</a>
+		<div class="sidebar">
+			<div class="ad">
+				AD
 			</div>
-			<div class="playlist">
-				<a href="#">
-					<img src="assets/imagens/animes_thumbs/7/miniaturas/1.jpg" alt="Thumbnail" />
-					<h3> <span> Episódio X </span> Título do Episódio <span> Tempo X </span> </h3>
-				</a>
-			</div>
-			<div class="playlist">
-				<a href="#">
-					<img src="assets/imagens/animes_thumbs/7/miniaturas/1.jpg" alt="Thumbnail" />
-					<h3> <span> Episódio X </span> Título do Episódio <span> Tempo X </span> </h3>
-				</a>
-			</div>
-			<div class="playlist">
-				<a href="#">
-					<img src="assets/imagens/animes_thumbs/7/miniaturas/1.jpg" alt="Thumbnail" />
-					<h3> <span> Episódio X </span> Título do Episódio <span> Tempo X </span> </h3>
-				</a>
+			<div class="playlist-holder">
+				<h2> > Outros episódios</h2>
+				<div class="playlist">
+					<a href="#">
+						<img src="../assets/imagens/animes_thumbs/7/miniaturas/1.jpg" alt="Thumbnail" />
+						<h3> <span> Episódio X </span> Título do Episódio <span> Tempo X </span> </h3>
+					</a>
+				</div>
+				<div class="playlist">
+					<a href="#">
+						<img src="../assets/imagens/animes_thumbs/7/miniaturas/1.jpg" alt="Thumbnail" />
+						<h3> <span> Episódio X </span> Título do Episódio <span> Tempo X </span> </h3>
+					</a>
+				</div>
+				<div class="playlist">
+					<a href="#">
+						<img src="../assets/imagens/animes_thumbs/7/miniaturas/1.jpg" alt="Thumbnail" />
+						<h3> <span> Episódio X </span> Título do Episódio <span> Tempo X </span> </h3>
+					</a>
+				</div>
+				<div class="playlist">
+					<a href="#">
+						<img src="../assets/imagens/animes_thumbs/7/miniaturas/1.jpg" alt="Thumbnail" />
+						<h3> <span> Episódio X </span> Título do Episódio <span> Tempo X </span> </h3>
+					</a>
+				</div>
 			</div>
 		</div>
 	</main>
