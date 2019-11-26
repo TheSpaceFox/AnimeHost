@@ -51,8 +51,9 @@ body, ul, li, a {
 	font-family: 'Karla';
 }
 
-.main {
+main {
   background-color: $cinza-claro;
+  min-height: 78vh;
 }
 
 h1 {
@@ -108,42 +109,39 @@ header {
 
 .menu {
     display: flex;  
+    justify-content: space-between;
     li {
       margin-left: 2.8em;
     }
     li a {
       display: block;
-      padding: 1em;
       color: $cinza-escuro;
       font-size: 2em;
+      padding: 0.5em;
     }
     li a:hover {
       background-color: #d9d9d9;
       border-radius: 0.2em;
     }
 }
-  
-.user {
-	width: 2.5vw;
-	height: 2.5vw;
-	border-radius: 50%;
-	background-image: url("../imagens/laphoto.jpg");
-    a > img {
-        width: 100%;
-        height: 100%;
-        border-radius: 50%;
-    }
-}
 
+.login{
+  display: block;
+  border-radius: 1em;
+  border: solid 2px #7f94ff;
+  color: #7f94ff;
+  font-size: 2em;
+  font-weight: bold;
+  padding: 0.5em;
+}
 
 #pesquisa {
   @extend %header-footer;
   position: relative;
   padding: 0.96em;
   width: 16.57vw;
-  max-width: 290px;
   height: 0.8vw;
-  border: 1.4px solid $cinza-escuro;
+  border: 1px solid $cinza-escuro;
   border-radius: 2.8em; 
   input {
     @extend %search-transparent;
@@ -155,6 +153,167 @@ header {
     @extend %search-transparent;
   }
 }
+
+/* Modals */  
+
+#bg, #bgtwo, #bgmain{
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: none;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  z-index: 2000;
+  background-color: rgba(0,0,0, .8);
+}
+
+#bg:target, #bgtwo:target{
+  display: flex;
+}
+
+#bgmain{
+  display: flex;
+}
+
+.modalmain{
+  align-self: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+}
+
+.boasvindas{
+  display: flex;
+  flex-direction: column;
+  width: 24.219vw;
+  height: 20vw;
+  background-color: #fff;
+  border: solid 1px #707070;
+  border-radius: 2em;
+  h1{
+    text-align: center;
+    font-size: 2.8em;
+  }
+  .text{
+    width: 65%;
+    text-align: justify;
+    font-size: 1.5em;
+  }
+}
+
+
+.image-delimiter{
+  border-radius: 2em;
+  width: 25%;
+  height: 90%;
+  background-image: url('../imagens/cellsatwork.png');
+  background-size: cover;
+}
+
+.modalheader{
+  width: 100%;
+    #close{
+      font-size: 2.5em;
+      position: unset;
+      height: auto;
+      float: right;
+    }
+}
+
+.box{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 24.219vw;
+  height: 28.385vw;
+  background-color: #fff;
+  border: solid 1px #707070;
+  border-radius: 2em;
+  h1{
+    text-align: center;
+    font-size: 3em;
+    font-weight: bold;
+    margin: 0;
+  }
+  h2{
+    margin-bottom: 0.2em;
+    font-size: 1.5em;
+    font-weight: lighter;
+  }
+  h3{
+    text-align: center;
+    width: 100%;
+    margin: 0;
+    font-size: 1.2em;
+    font-weight: lighter;
+  }
+  a{
+    display: block;
+    font-size: 1.2em;
+  }
+}
+
+
+form{
+  width: 90%;
+  margin: 0 auto;
+}
+
+input{
+  font-family: 'Karla';
+  font-size: 1em;
+  width: 20vw;
+  height: 2.083vw;
+}
+
+#close{
+  position: absolute;
+  align-self: flex-start;
+  color: red;
+  font-size: 3.5em;
+  width: 2.083vw;
+  height: 28.125vw;
+  text-align: center;
+  right: 0;
+}
+
+#close:hover{
+  opacity: .6;
+}
+
+.recaptcha{
+  margin-top: 2em;
+}
+.submit-container{
+  margin: 0 auto;
+  margin-top: 2em;
+  display: flex;
+  width: 80%;
+  height: 2.344vw;
+  align-items: center;
+  justify-content: space-between;
+  img{
+    width: 8.240vw;
+    height: 1.979vw;
+  }
+  .submit{
+    margin: 0;
+    border: none;
+    width: 9.375vw;
+    height: 2.344vw;
+    background-color: #7F94FF;
+    font-family: 'Karla';
+    color: #fff;
+    font-size: 2.2em;
+  }
+}
+
 
 /* Footer */
 
@@ -194,18 +353,12 @@ footer {
     font-size: 1.115em;
   }
 
-  footer {
-    font-size: 0.8em;
-    margin-top: 0;
-  }
-
   header {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
     width: 100%;
     min-height: 20vw;
-    max-height: 180px;
   }
 
   .fixed {
@@ -225,15 +378,15 @@ footer {
   #menu_collapse {
     display: none;
     flex-direction: column;
-    width: 100%;
-    height: 24.5vw;
+    min-width: 100%;
+    height: auto;
   }
 
   .menu {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
-    height: 24.5vw;
+    height: 32vw;
     background-color: #fff;
     li {
       width: 100%;
@@ -242,8 +395,126 @@ footer {
        padding: 0.7vw;
        color: $cinza-escuro;
        font-size: 4vw;
-     }
+      }
     }
+    li:nth-child(5){
+      a{
+        color: #7F94FF;
+      }
+    }
+  }
+
+  /* Modals */
+
+  #bgmain{
+    display: flex;
+  }
+  
+  .modalmain{
+    width: 90%;
+  }
+  
+  .boasvindas{
+    width: 80vw;
+    height: 120vw;
+    border: solid 1px #707070;
+    border-radius: 2em;
+    h1{
+      font-size: 2.3em;
+    }
+    .text{
+      width: 65%;
+      text-align: justify;
+      font-size: 1em;
+    }
+  }
+  
+  
+  .image-delimiter{
+    border-radius: 1.5em;
+    width: 25%;
+    height: 90%;
+    background-image: url('../imagens/cellsatwork.png');
+  }
+  
+  .modalheader{
+    width: 100%;
+      #close{
+        font-size: 2.5em;
+        position: unset;
+        height: auto;
+        float: right;
+      }
+  }
+
+  #bg:target, #bgtwo:target{
+    display: flex;
+  }
+  
+  .box{
+    width: 80vw;
+    height: 120vw;
+    h1{
+      font-size: 2.5em;
+    }
+    h2{
+      margin-bottom: 0.2em;
+      font-size: 1.5em;
+    }
+    h3{
+      font-size: 1em;
+    }
+    a{
+      font-size: 1.1em;
+    }
+  }
+  
+  form{
+    width: 90%;
+  }
+  
+  input{
+    font-size: 1em;
+    width: 70vw;
+    height: 6vw;
+  }
+  
+  #close{
+    font-size: 2.5em;
+    width: 10vw;
+    height: 100%;
+  }
+  
+  .recaptcha{
+    margin-top: 2em;
+  }
+  .submit-container{
+    margin: 0 auto;
+    margin-top: 2em;
+    display: flex;
+    width: 90%;
+    height: auto;
+    align-items: center;
+    justify-content: space-between;
+    img{
+      width: 29vw;
+      height: 6.96vw;
+    }
+    .submit{
+      margin: 0;
+      border: none;
+      width: 38vw;
+      height: 9vw;
+      border-radius: 2em;
+      background-color: #7F94FF;
+      font-family: 'Karla';
+      color: #fff;
+      font-size: 1.6em;
+    }
+  }
+
+  .login{
+    display: none;
   }
 
   .icon {
@@ -260,12 +531,13 @@ footer {
     width: 100%;
     height: 15vw;
     border-radius: 0;
+    border: 0;
     background-color: #fff;
     input {
+      border: 1.125px solid $cinza-escuro;
       margin: 3vw;
       width: 90%;
       height: 10vw;
-      border: 1.125px solid $cinza-escuro;
       border-radius: 1vw; 
       font-size: 3vw;
     }
@@ -281,17 +553,22 @@ footer {
   /* Footer */
 
   footer {
+    display: flex;
+    flex-wrap: wrap;
     margin-top: 4vw;
+    font-size: 1.2em;
     width: 100%;
-    height: 18vw;
-    a > img {
-      height: 6vw;
-      width: 6vw;
-    }
+    height: auto;
   }
-
+  
   .social-holder {
-    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
     align-self: center;
+        a > img {
+          height: 8vw;
+          width: 8vw;
+        }
   }
 }

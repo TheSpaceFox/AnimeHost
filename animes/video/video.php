@@ -44,7 +44,7 @@ echo file_get_contents("../../assets/header-video.txt");
                 <h1> " . $anime["nome"] . " - Episódio " . $video["numep"] . " - " . $video["nomeep"] . " </h1>
             </hgroup>
             <div class=\"actions\">
-                <a> <i class=\"fas fa-bars\"></i> </a>
+                <a href=\"../detalhe.php?id=" . $video["id_fk"] . "\"> <i class=\"fas fa-bars\"></i> </a>
                 <a href=\"video.php?id=" . ($video["id_video"] - 1) . "\"> <i class=\"fas fa-angle-double-left\"></i> </a>
                 <a href=\"video.php?id=" . ($video["id_video"] + 1) . "\"> <i class=\"fas fa-angle-double-right\"></i> </a>
                 <a> <i class=\"fas fa-heart\"></i> </a>

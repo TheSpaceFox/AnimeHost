@@ -15,7 +15,29 @@
 	echo file_get_contents("assets/header-o.txt");
 ?>
 
-<div class="main">
+	<div id="bgmain">
+		<div class="boasvindas">
+			<div class="modalheader">
+					<a href="javascript:modal()" id="close"> X </a>
+				<h1> Seja bem vindo ao AnimeHost! </h1> 
+			</div>
+			<div class="modalmain">
+				<div class="image-delimiter">
+				</div>
+					<div class="text">
+					<p>
+					O AnimeHost é um site de Streaming de animes desenvolvido por mim, Felipe Ribeiro. Atualmente o site se 
+					encontra na versão de testes, logo tanto por esse motivo quando ao fato de eu não querer ser processado 
+					pelo Crunchyroll os vídeos se encontram indisponiveis :( .
+					O site é basicamente dividido entre o Home, Animes, Animes em Alta e Calendário, é possível pesquisar um
+					anime independente da página que você se encontra. Sinta-se livre para explorar o site!
+					</p>
+					<a href="about/index.html"> Clique aqui para acessar a página "sobre o site" </a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="main">
 
 		<div class="slide-container">
 			<span id="slider-image-01"></span>
@@ -23,7 +45,7 @@
 			<span id="slider-image-03"></span>
 			<span id="slider-image-04"></span>
 
-			<div class="image-container">
+			<div class="image-container" id="carrosel">
 				<a href="#">
 					<div class="slider-image">
 						<span class="info">
@@ -37,7 +59,7 @@
 					<div class="slider-image">
 						<span class="info">
 							<h1> SAO Alicization: War of Underworld - EP 1 </h1>
-							<h3> Já dísponivel </h3>
+								<h3> Já dísponivel </h3>
 						</span>
 					</div>
 				</a>
@@ -67,7 +89,7 @@
 				<a href="#slider-image-03" class="slider-button"></a>
 				<a href="#slider-image-04" class="slider-button"></a>
 			</div>
-        </div>
+    	</div>
         
 <?php
 

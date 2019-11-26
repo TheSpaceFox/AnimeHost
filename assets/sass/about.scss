@@ -1,0 +1,136 @@
+main{
+    display: flex;
+    flex-direction: column;
+}
+
+h1{
+    color: #fff;
+    text-align: center;
+}
+
+h2{
+    font-size: 3em;
+    margin-left: 1.2em;
+}
+
+p{
+    text-align: justify;
+    font-size: 1.8em;
+    margin-left: 2em;
+}
+
+.bigbrother{
+    width: 100%;
+    height: 8.490vw;
+    background-color: #7F94FF;
+}
+
+
+section{
+    align-self: center;
+    margin-top: 4em;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex-direction: row;
+    width: 60%;
+    height: auto;
+}
+        .text-container{
+            width: 50%;
+            border-left: solid 2px #707070;
+        }
+
+.intro{
+    img{
+        width: 18.229vw;
+        height: 18.229vw;
+    }
+}
+
+.design{
+    width: 40%;
+    img{
+        border-radius: 2em;
+        max-width: 15.625vw ;
+        box-shadow: 5px 5px 3px #000;
+    }
+}
+
+.figure-holder{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    flex-direction: column;
+    width: 30%;
+        figcaption{
+            font-size: 1.6em;
+            text-align: center;
+        }
+}
+.problems{
+    width: 40%;
+    h2{
+        align-self: center;
+    }
+    img{
+        width: 10.417vw;
+    }
+}
+
+@media screen and (max-width:599px){
+    h2,p{
+        margin: 0;
+    }
+
+    h2{
+        font-size: 2.4em;
+    }
+    
+    p{
+        font-size: 1.2em;
+    }
+
+    .bigbrother{
+        height: 15vw;
+    }
+    section{
+        width: 90%;
+        flex-direction: column;
+        margin-top: 0;
+        margin-bottom: 3em;
+    }
+    .text-container{
+        width: 100%;
+        border-left: none;
+        border-top: solid 1px #707070;
+    }
+
+    img{
+        align-self: center;
+    }
+    .intro{
+        img{
+            width: 50vw;
+            height: 50vw;
+        }
+    }
+    .design{
+        width: 90%;
+        img{
+            max-width: 60vw;
+        }
+        .text-container{
+            margin-top: 2em;
+        }
+    }
+    .problems{
+        width: 90%;
+    }
+    .figure-holder{
+        width: 100%;
+        img{
+            width: 60vw;
+        }
+    }
+}

@@ -2,17 +2,17 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <meta name="Description" content="Pagina com a lista dos Animes, com os links que redirecionam para estes">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>AnimeHost</title>
-	<script src="../../assets/js/script.js"></script>
+	<link rel="shortcut icon" type="image/png" href="../../assets/imagens/Favicon.png"/>
 	<link rel="stylesheet" href="https://cdn.plyr.io/3.5.6/plyr.css" />
 	<script id="dsq-count-scr" src="//theanimehost.disqus.com/count.js" async></script>
+    <link href="https://fonts.googleapis.com/css?family=Karla&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/7b6fc47442.js" crossorigin="anonymous"></script>
+    <script src="../../assets/js/script.js"></script>
     <link rel="stylesheet" type="text/css" href="../../assets/css/template.css">
     <link rel="stylesheet" type="text/css" href="../../assets/css/video.css">
-    <link href="https://fonts.googleapis.com/css?family=Karla|Montserrat&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/7b6fc47442.js" crossorigin="anonymous"></script>
 	<script src="https://cdn.plyr.io/3.5.6/plyr.js"></script>
 	<script>
 		document.addEventListener('DOMContentLoaded', () => {
@@ -33,29 +33,88 @@
 			</a>
 			<nav>
 				<ul class="menu">
-					<li><a href="../../index.php"><b>Home</b></a></li>
-					<li><a href="../index.php">Animes</a></li>
+					<li><a href="../../index.php">Home</a></li>
+					<li><a href="index.php"><b> Animes </b></a></li>
 					<li><a href="../../emalta/index.php">Em alta</a></li>
-					<li><a href="calendario/calendario.html">Calendário</a></li>
+					<li><a href="../calendario/index.html">Calendário</a></li>
 				</ul>
 			</nav>
 			<div id="pesquisa">
 				<input type="text" id="search" placeholder="Buscar Animes" />
-				<button class="search-button" id="enter" onclick="search()"><img src="../../assets/imagens/search.png" alt="Lupa"></button>
+				<button class="search-button" id="enter" onclick="search()" ><img src="../../assets/imagens/search.png" alt="Lupa"></button>
 			</div>
-			<div class="user">
-				<a href="#">
-					<img src="../../assets/imagens/LaPhoto.png" alt="Foto de Perfil">
-				</a>
-			</div>
+			<a class="login" href="#bgtwo"> Cadastro / Login </a>
+			<script>
+			var input = document.getElementById("search");
+			input.addEventListener("keyup", function(event) {
+    			if (event.keyCode === 13) {
+       				event.preventDefault();
+     				document.getElementById("enter").click();
+    			}
+			});
+
+			</script>
 		</div>
 		<nav id="menu_collapse">
 			<ul class="menu">
-				<li><a href="../../index.php"><b>Home</b></a></li>
-				<li><a href="../index.php">Animes</a></li>
-				<li><a href="emalta/emalta.php">Em alta</a></li>
-				<li><a href="calendario/calendario.html">Calendário</a></li>
+				<li><a href="../../index.php">Home</a></li>
+				<li><a href="index.php"><b> Animes </b></a></li>
+				<li><a href="../../emalta/index.php">Em alta</a></li>
+				<li><a href="../calendario/index.html">Calendário</a></li>
+				<li><a href="#bgtwo"> <b> Cadastro / Login </b></a></li>
 			</ul>
 		</nav>
 	</header>
 	<main>
+
+	<div id="bg">
+        <div class="box">
+			<a href="" id="close"> X </a>
+           	<h1> Login </h1>
+
+            <form name="login" action="user.php">
+                <h2> Username </h2>
+                <input type="text" name="username">
+
+                <h2> Password </h2>
+                <input type="password" name="passsword">
+                <a href="#bgtwo"> I don't have an account </a>
+            </form>
+            <form class="recaptcha" action="?" method="POST">
+                <div class="g-recaptcha" data-sitekey="6LcblMQUAAAAAJhNh_H-ond15x0cv5g0QCdGP4Ao"></div>
+           	</form>
+            <div class="submit-container">
+                <input class="submit" type="submit" value="Create account" onClick="document.form1.submit()">
+                <img src=" assets/imagens/logotipo.png" alt="Logotipo AnimeHost">
+			</div>
+        </div>
+	</div>
+
+	<div id="bgtwo">
+        <div class="box">
+			<a href="" id="close"> X </a>
+            <h1> Start using AnimeHost </h1>
+            <h3> Join AnimeHost to see your favorite anime for free, or something like this. </h3>
+
+            <form name="sign-up" action="user.php">
+                <h2> E-mail </h2>
+                <input type="text" name="e-mail">
+
+                <h2> Username </h2>
+                <input type="text" name="username">
+
+                <h2> Password </h2>
+                <input type="password" name="password">
+                <a href="#bg"> I already have an account </a>
+            </form>
+            <form class="recaptcha" action="?" method="POST">
+                <div class="g-recaptcha" data-sitekey="6LcblMQUAAAAAJhNh_H-ond15x0cv5g0QCdGP4Ao"></div>
+            </form>
+            <div class="submit-container">
+                <input class="submit" type="submit" value="Create account" onClick="document.form1.submit()">
+                <img src=" assets/imagens/logotipo.png" alt="Logotipo AnimeHost">
+            </div>
+        </div>
+	</div>
+
+

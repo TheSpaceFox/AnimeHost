@@ -103,7 +103,9 @@ while ($row = mysqli_fetch_assoc($result))
     echo "<a href=\"detalhe.php?id=" . $row["id"] . "\">" .
                 "<div class=\"anime\">
                     <img src=\"../assets/imagens/posters/" . $row["poster"] . "\" alt=\"Poster do Anime\" />
-                    <h5>" . $row["nome"] . "<span>" . $row["episodios"] . " Vídeo(s)</span></h5></div></a>";
+                    <h5>" . $row["nome"] . "<span>" . $row["episodios"] . " Vídeo(s)</span></h5>
+                </div>
+        </a>";
 }
 
 echo "</div>";

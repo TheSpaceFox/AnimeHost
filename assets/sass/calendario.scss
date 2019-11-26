@@ -1,16 +1,68 @@
-h1{
-  text-align: center;
-  font-size: 5vw;
-}
 main{
-  background-image: url("../imagens/giphy.gif");
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+  justify-content:center;
 }
 
-@media only screen 
-and (min-device-width: 600px) 
-and (max-device-width: 1920px){
-  h1{
-      font-size: 1.8vw;
-      margin-bottom: 0;
+.table-container{
+  width: 80%;
+}
+
+table{
+  width: 100%;
+  border-top-right-radius: 1.8em;
+  border-top-left-radius: 1.8em;
+  border: solid 1px #707070;
+  border-spacing: 0;
+}
+
+th{
+  height: 3.125vw;
+  color: #fff;
+  font-size: 2em;
+  border-spacing: 0;
+}
+
+th:nth-child(1){
+  border-top-left-radius: 0.8em;
+}
+
+th:nth-child(6){
+  border-top-right-radius: 0.8em;
+}
+
+tr:nth-child(1){
+  background-color: #D91C1C;
+}
+
+td{
+  padding: 1em;
+  height: 1.875vw;
+  font-size: 1.5em;
+  text-align: center;
+}
+
+@media screen and (max-width: 599px){
+  .table{
+    border-top-right-radius: 1em;
+    border-top-left-radius: 1em;
+  }
+
+  .table-container{
+    width: 90%;
+    overflow: scroll;
+    -webkit-overflow-scrolling: touch;
+    scroll-snap-type: x mandatory;
+  }
+
+  tr{
+    height: 60px;
+    max-height: 100px;
+  }
+
+  td{
+    padding: 0.5em;
+    height: 1vw;
   }
 }

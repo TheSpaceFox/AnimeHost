@@ -20,6 +20,33 @@ function searchbar_collapse(){
     }
 }
 
+function modal(){
+  var x = document.getElementById("bgmain");
+  if (x.style.display === "flex"){
+    x.style.display = "flex";
+    } else {
+      x.style.display = "none"
+    }
+}
+
+function modal2(){
+  var x = document.getElementById("bg");
+  if (x.style.display === "flex"){
+    x.style.display = "flex";
+    } else {
+      x.style.display = "none"
+    }
+}
+
+function modal3(){
+  var x = document.getElementById("bg");
+  if (x.style.display === "flex"){
+    x.style.display = "flex";
+    } else {
+      x.style.display = "none"
+    }
+}
+
 function search(){
   window.location.href = "http://theanimehost.000webhostapp.com/animes/index.php?s=" + document.getElementById('search').value;
 }
